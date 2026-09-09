@@ -88,13 +88,13 @@ Zorunlu değil ama **koy**. Müşteri güncellemeyi indirince neyi değiştirece
 "files": ["client", "server", "html", "fxmanifest.lua"]
 ```
 
-Dosya adı, klasör adı veya kısa bir not olabilir:
+Dosya adının yanına parantez içinde not düşebilirsin. Parantezli kısım sayfada dosya adından ayrı, soluk yazıyla çıkıyor:
 
 ```json
 "files": ["html (remove the old html folder and replace it)", "server", "locales"]
 ```
 
-Sayfada sürümün en üstünde ayrı bir kutuda, tek tek etiketler halinde görünüyor.
+Sayfada sürümün en üstünde katlanır bir kutuda duruyor; açınca resource adının altında ağaç görünümünde listeleniyor. Not da İngilizce olacak.
 
 ---
 
@@ -111,7 +111,7 @@ UI değişikliklerinde ekran görüntüsü koy. Zorunlu değil.
 
 Doğrudan görsele giden adres olmalı (`.png`, `.jpg`, `.jpeg`, `.webp`). Imgur veya fivemanage olur; imgur'da **paylaşım sayfası değil** görselin kendi adresi lazım (`i.imgur.com/...` ile başlayan).
 
-Sayfada 16:10 küçük kareler halinde ızgara olarak çıkıyor, tıklayınca tam boyutu yeni sekmede açılıyor.
+Sayfada değişiklik listesinin **altında**, 16:10 küçük kareler halinde ızgara olarak çıkıyor. Tıklayınca sayfa içinde tam ekran açılıyor; boş alana tıklayarak, sağ üstteki çarpıyla veya Esc ile kapanıyor.
 
 ---
 
