@@ -1,0 +1,13 @@
+{
+  "packages": [
+    { "key": "cylex_mdt",          "name": "Cylex MDT",                 "packageId": 7451640 },
+    { "key": "cylex_emsmdt",       "name": "Cylex EMS MDT",             "packageId": 7458379 },
+    { "key": "cylex_housingv2",    "name": "Cylex Housing v2",          "packageId": 6287674 },
+    { "key": "cylex_housing",      "name": "Cylex Modern Housing",      "packageId": 6341284 },
+    { "key": "cylex_multicharv3",  "name": "Cylex Multicharacter V3",   "packageId": 7386955 },
+    { "key": "cylex_multichar",    "name": "Cylex Multicharacter",      "packageId": 5824768 },
+    { "key": "cylex_animmenuv2",   "name": "Cylex Animation Menu v2",   "packageId": 6158205 },
+    { "key": "cylex_dispatch",     "name": "Cylex Dispatch" },
+    { "key": "cylex_zuno",         "name": "Cylex Zuno" }
+  ]
+}

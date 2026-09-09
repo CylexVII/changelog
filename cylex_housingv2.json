@@ -1,0 +1,24 @@
+{
+  "package": "Cylex Housing v2",
+  "entries": [
+    {
+      "version": "1.13",
+      "date": "2026-09-01",
+      "title": "Shell yerlestirme ve performans",
+      "changes": [
+        { "type": "add",    "text": "Ornek: yeni bir ozellik satiri" },
+        { "type": "fix",    "text": "Ornek: duzeltilen bir hata satiri" },
+        { "type": "perf",   "text": "Ornek: iyilestirme satiri" },
+        { "type": "remove", "text": "Ornek: kaldirilan bir sey" }
+      ]
+    },
+    {
+      "version": "1.11",
+      "date": "2026-08-14",
+      "title": "Ilk kayit",
+      "changes": [
+        { "type": "add", "text": "Ornek: onceki surumden bir degisiklik" }
+      ]
+    }
+  ]
+}
