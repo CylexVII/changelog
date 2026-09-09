@@ -1,0 +1,2016 @@
+{
+  "package": "Cylex Phone",
+  "entries": [
+    {
+      "version": "1.37",
+      "date": "2026-09-04",
+      "changes": [
+        {
+          "type": "add",
+          "text": "Messages: The app design has been completely reworked."
+        },
+        {
+          "type": "add",
+          "text": "Messages: You can now select multiple conversations at once and delete them."
+        },
+        {
+          "type": "add",
+          "text": "Messages: Using the filter in the top right, you can list read or unread messages."
+        },
+        {
+          "type": "add",
+          "text": "Messages: You can now quote messages; right-click any message to quote it."
+        },
+        {
+          "type": "add",
+          "text": "Messages: You can now react to messages; right-click any message to leave a reaction."
+        },
+        {
+          "type": "add",
+          "text": "Messages: A \"typing\" indicator has been added, so the other party can see when you are writing a message."
+        },
+        {
+          "type": "add",
+          "text": "Messages: Read receipts have been added; once you read a message, the other party is notified that it has been read."
+        },
+        {
+          "type": "add",
+          "text": "Messages: To prevent message spam, a queue system (like Discord's message system) has been added for messages sent back to back."
+        },
+        {
+          "type": "add",
+          "text": "Messages: General cache issues in the Messages app have been fixed."
+        },
+        {
+          "type": "add",
+          "text": "You can now connect the Music app to vehicles and props — the music plays from that vehicle's / prop's speakers and everyone around it hears it."
+        },
+        {
+          "type": "add",
+          "text": "30 new props you can connect to have been added to the Music app (DJ booths, speakers, and more)."
+        },
+        {
+          "type": "add",
+          "text": "You can now play your playlists in shuffle mode in the Music app."
+        },
+        {
+          "type": "add",
+          "text": "Broken / unplayable songs are now detected automatically: you get a warning and the song is skipped."
+        },
+        {
+          "type": "add",
+          "text": "The Garage app's valet can now easily be disabled from the config."
+        },
+        {
+          "type": "add",
+          "text": "The valet can now be configured to spawn the vehicle right in front of you instantly."
+        },
+        {
+          "type": "add",
+          "text": "When creating a Darkchat you can now choose the # code yourself (only one chat per code; if you leave it empty a random code is generated as before)."
+        },
+        {
+          "type": "add",
+          "text": "Dedicated Discord logs have been added to the Streaming app for going live / ending a stream, donations and chat messages (sv_config.lua)."
+        },
+        {
+          "type": "add",
+          "text": "When you change your password on a social media app, every session logged into that account is now signed out automatically."
+        },
+        {
+          "type": "add",
+          "text": "The GIF backend has been moved to Klipy."
+        },
+        {
+          "type": "fix",
+          "text": "In Darkchat, changing your name did not update even after leaving and re-entering the app; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "In some cases the member count and nicknames were not visible when tapping a Darkchat profile; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "In some cases the names of Darkchat members were not visible at all; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Several fixes have been added for players who could not hear music in the Music app (feedback is welcome)."
+        },
+        {
+          "type": "fix",
+          "text": "For some players the Music app returned no search results because of DNS issues; this has been fixed (feedback is welcome)."
+        },
+        {
+          "type": "fix",
+          "text": "In the Garage app, the vehicle's last parked garage could not be marked when using tgiann-realparking and jg-advancedgarages; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Dynamic Island performance has been improved."
+        },
+        {
+          "type": "fix",
+          "text": "When a call was not answered, the automatic \"I called you but couldn't reach you\" message was not sent to the other party; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "The calculation error in Recent Calls has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "The clock sometimes displayed nonsensical values such as 24:50; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "In some cases on Frogly, the money did not arrive if the person whose post you purchased was offline; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Several issues that occurred while sending money in Bills and Messages have been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "The Control Center opening and UI animations have been reworked."
+        },
+        {
+          "type": "fix",
+          "text": "Favorites were not working for GIFs; this has been fixed."
+        },
+        {
+          "type": "change",
+          "text": "Changed files: html (remove old html file and put new), client, server, core, editable, locales, fxmanifest.lua, safeevents.txt"
+        }
+      ]
+    },
+    {
+      "version": "1.35",
+      "date": "2026-07-13",
+      "changes": [
+        {
+          "type": "add",
+          "text": "The MeTube app now runs far more stably. (Feedback is welcome)"
+        },
+        {
+          "type": "add",
+          "text": "The phone's volume up / down buttons are now fully functional. (In the MeTube app you can use them to adjust both the sound others hear and the sound you hear; this will be extended to other apps as well)"
+        },
+        {
+          "type": "add",
+          "text": "Support for the jg-advancedgarages script has been added for the ESX framework."
+        },
+        {
+          "type": "add",
+          "text": "The Weather app has been adapted to renewed-weathersync."
+        },
+        {
+          "type": "add",
+          "text": "When a vehicle is requested with the valet from the Garage app, the list is now updated instantly."
+        },
+        {
+          "type": "add",
+          "text": "The group page in the Messages app has been redesigned."
+        },
+        {
+          "type": "add",
+          "text": "The group page in the Darkchat app has been redesigned; you can now copy the group code with a single click."
+        },
+        {
+          "type": "add",
+          "text": "An opening animation has been added to the home screen."
+        },
+        {
+          "type": "add",
+          "text": "Dynamic Island animations are now smoother."
+        },
+        {
+          "type": "fix",
+          "text": "Vehicle names were not displayed correctly in the Garage app on the ESX framework; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "The Music section in the Control Center was not working; it is now functional."
+        },
+        {
+          "type": "fix",
+          "text": "The game apps and the MeTube app were breaking when you exited and re-entered them after rotating the phone to landscape; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Camera shaking while driving has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Animations are no longer cancelled when the camera is opened while an animation is playing."
+        },
+        {
+          "type": "fix",
+          "text": "The camera angle was wrong during animations such as sitting; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "The issue where uncensored content was visible on Frogly profiles without purchasing has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "The scroll animation was not working while scrolling in Foffy Explore; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Several design bugs in the Casino app have been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Widgets were breaking when entering / exiting the Camera app; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "In some cases the app opening animation was not playing; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "The Health widget was not working in some cases; this has been fixed."
+        },
+        {
+          "type": "change",
+          "text": "Changed files: cylex_youtubeApp (remove old cylex_youtubeApp and put new), html (remove old html file and put new), client, editable, locales, fxmanifest.lua, safeevents.txt"
+        }
+      ]
+    },
+    {
+      "version": "1.33",
+      "date": "2026-06-01",
+      "changes": [
+        {
+          "type": "add",
+          "text": "Health app added"
+        },
+        {
+          "type": "add",
+          "text": "With this app, you can track the steps you’ve run or walked, view the elevation you’ve climbed, calories burned, your heart rate, and more."
+        },
+        {
+          "type": "add",
+          "text": "You can even compete with other players on the leaderboard for step count, distance walked, and more."
+        },
+        {
+          "type": "add",
+          "text": "You can also view your heart rate, running time, and more via the widget."
+        },
+        {
+          "type": "fix",
+          "text": "Widgets have been optimized."
+        },
+        {
+          "type": "change",
+          "text": "Changed files: html (remove old html file and put new), locales, editable/cl_config.lua, fxmanifest.lua, safeevents.txt"
+        }
+      ]
+    },
+    {
+      "version": "1.32",
+      "date": "2026-05-29",
+      "changes": [
+        {
+          "type": "add",
+          "text": "Three new widgets have been added to the home screen (Bank, Photos, and Weather)"
+        },
+        {
+          "type": "add",
+          "text": "New Weather app has been added."
+        },
+        {
+          "type": "add",
+          "text": "It automatically fetches data based on the active weather scripts you’re using; if your script supports dynamic weather updates, you can view future weather forecasts directly within the app."
+        },
+        {
+          "type": "add",
+          "text": "The Messages app has been completely rewritten from scratch."
+        },
+        {
+          "type": "fix",
+          "text": "Messages app now runs much more optimally, stably, and efficiently."
+        },
+        {
+          "type": "fix",
+          "text": "In some cases, tapping on notifications on the lock screen or incoming notifications wouldn’t open the conversation; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Issues with the profile photo not loading have been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "When calling someone not in the game from the contacts list, the automatically sent message often caused strange issues; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "When you put your phone in your pocket while in a conversation or exited the app while in a conversation, notifications from that conversation weren’t coming through; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "A few issues encountered in the messaging app after the new update have been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "The ToggleFocusKeepInput export, which can be used to prevent other keys from working while typing in custom apps, has been added as a client."
+        },
+        {
+          "type": "fix",
+          "text": "Crypto in the bank no longer requires an API Key; you can use real-time crypto prices by setting CryptoRefreshTimer to 30 minutes in sv_config.lua."
+        },
+        {
+          "type": "fix",
+          "text": "A few known bugs in crypto have been fixed and optimized."
+        },
+        {
+          "type": "change",
+          "text": "Changed files: html (remove old html file and put new), locales, fxmanifest.lua, safeevents.txt"
+        }
+      ]
+    },
+    {
+      "version": "1.31",
+      "date": "2026-05-27",
+      "changes": [
+        {
+          "type": "add",
+          "text": "Added support for origen_inventory"
+        },
+        {
+          "type": "add",
+          "text": "Added a log for firing employees and changing permissions to the Company app"
+        },
+        {
+          "type": "add",
+          "text": "Added an admin-only log to Frogger, Frogram, Frogly, and Yellow Page (AdminWebhook)"
+        },
+        {
+          "type": "add",
+          "text": "You can now quickly switch between recent apps by holding down the exit button and swiping slightly upward."
+        },
+        {
+          "type": "add",
+          "text": "Additionally, if you tap the white button and swipe left, you can quickly switch to the previous app; if you swipe right, you can quickly switch to the app you previously exited."
+        },
+        {
+          "type": "add",
+          "text": "With these features, your apps will now stay open in the background, and you can resume where you left off when you return (Feel free to contact me if you encounter any issues.)"
+        },
+        {
+          "type": "fix",
+          "text": "Previously, when approaching someone with music playing, the sound would briefly become very loud for half a second; I think that’s been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "After selecting a photo in the gallery, you can now quickly switch to other photos by scrolling, using the directional keys, or dragging and dropping."
+        },
+        {
+          "type": "fix",
+          "text": "When a photo was deleted while selected, it used to take you back to the beginning; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Performance improvements have been made."
+        },
+        {
+          "type": "fix",
+          "text": "The `add_twitter_like` command has been fixed."
+        },
+        {
+          "type": "change",
+          "text": "Changed files: html (remove old html file and put new), locales, editable/sv_config.lua, fxmanifest.lua, safeevents.txt"
+        }
+      ]
+    },
+    {
+      "version": "1.28",
+      "date": "2026-04-23",
+      "changes": [
+        {
+          "type": "add",
+          "text": "Following you has been added to all social media profiles if someone is following you."
+        },
+        {
+          "type": "add",
+          "text": "The Frogram profile editing page has been updated."
+        },
+        {
+          "type": "fix",
+          "text": "The issue where audio wasn’t audible in the Streaming app has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Swiper was sending extra notifications when a match was made, and the text of one notification was incorrect; fixed."
+        },
+        {
+          "type": "fix",
+          "text": "In the Company app, messages from the other party couldn’t be read in the light theme; fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Now, when someone joins the Streaming app, everyone can see who joined in the chat."
+        },
+        {
+          "type": "fix",
+          "text": "The issue where notifications remained visible on the lock screen even after being dismissed has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Name-related issues encountered when sending messages from the contacts list and in the Messages app have been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "The issue where the back button in Frogger did not return to the previous screen has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "In all messaging apps, incoming messages were appearing on the lock screen while in an active conversation; fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Notifications for deleted conversations were remaining on the lock screen; fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Photos of contacts were not appearing in Swiper; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Adjustments have been made for users experiencing a black screen issue in FaceTime."
+        },
+        {
+          "type": "fix",
+          "text": "The animation in AirDrop has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "The ability to add a location when sharing a post on Frogram has been added; if you check the Add Location option when sharing a post, others can see the location of where you shared the post."
+        },
+        {
+          "type": "fix",
+          "text": "Some design bugs have been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "In Frogram, when viewing someone else’s profile, clicking on your own profile from the bottom right used to cause a crash; fixed."
+        },
+        {
+          "type": "fix",
+          "text": "When there were more than 5-6 people in the Viewed section of a Story, you couldn’t scroll down; fixed."
+        },
+        {
+          "type": "fix",
+          "text": "If you exited a Story without scrolling, it wasn’t counted as viewed; fixed."
+        },
+        {
+          "type": "fix",
+          "text": "If you tried to send a message to someone whose conversation had been deleted, the message wouldn’t send; fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Now, when you tap the notifications page in social media apps, the notifications on the lock screen will be cleared."
+        },
+        {
+          "type": "fix",
+          "text": "The issue where notes appeared blank upon first opening has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "The verification badge was missing from the Frogly profile; it has been added."
+        },
+        {
+          "type": "fix",
+          "text": "The border around viewed stories in Frogram was not visible in Light mode; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "You can now go to a profile by tapping the profile photo from a story."
+        },
+        {
+          "type": "fix",
+          "text": "In Frogram profiles, buttons were not visible in light mode; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "You can now edit your nickname in Frogram as well."
+        },
+        {
+          "type": "change",
+          "text": "Changed files: html (remove old html file and put new), locales, server/sv_cloudsync.lua, server/sv_utils.js (remove it), fxmanifest.lua, safeevents.txt"
+        }
+      ]
+    },
+    {
+      "version": "1.26",
+      "date": "2026-04-05",
+      "changes": [
+        {
+          "type": "add",
+          "text": "The phone file size has been reduced by 80%."
+        },
+        {
+          "type": "add",
+          "text": "3 new server-side export functions have been added. (getUserDataBySource, sendMessage, sendCoords)"
+        },
+        {
+          "type": "add",
+          "text": "You can now increase the phone’s scale beyond the default setting in the settings. (1.25 > 1.35)"
+        },
+        {
+          "type": "add",
+          "text": "Custom App support has been added; you can find the necessary information in the docs."
+        },
+        {
+          "type": "fix",
+          "text": "The issue with mixing story names in Frogram has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "An issue where deleting a message while a notification was active in the Messages app caused problems has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "An issue where some posts didn’t appear after being liked in Frogram has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "An issue that occurred when deleting a message in Company and Swiper has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "An issue with the Followed and Follow data in the Frogram, Frogger, and Frogly apps has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "The issue where video audio continued playing after exiting the Foffy app has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "The issue where the Loading Music screen appeared randomly in the Music app has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "In FaceTime, the camera direction could be changed without answering the call; this has been fixed."
+        },
+        {
+          "type": "change",
+          "text": "Changed files: html (remove old html file and put new), locales, server/sv_cloudsync.lua, server/sv_utils.js (new file), fxmanifest.lua, safeevents.txt"
+        }
+      ]
+    },
+    {
+      "version": "1.25",
+      "date": "2026-03-25",
+      "changes": [
+        {
+          "type": "add",
+          "text": "A new app called Foffy has been added; you can share your fun short videos."
+        },
+        {
+          "type": "add",
+          "text": "Quick account switching has been added to all social media apps. You can access this feature in Profile Settings."
+        },
+        {
+          "type": "add",
+          "text": "You no longer need to follow someone to view their Frogram stories; everyone can view each other’s stories."
+        },
+        {
+          "type": "add",
+          "text": "You can now reply to Frogram stories."
+        },
+        {
+          "type": "add",
+          "text": "The Frogram sign-up and login screen has been redesigned."
+        },
+        {
+          "type": "add",
+          "text": "The Frogram Explore section has been redesigned."
+        },
+        {
+          "type": "add",
+          "text": "A withdrawal and deposit log for Discord has been added to the Company app."
+        },
+        {
+          "type": "add",
+          "text": "App opening and closing animations have been made smoother."
+        },
+        {
+          "type": "add",
+          "text": "A loading screen has been added during the upload process when taking photos."
+        },
+        {
+          "type": "add",
+          "text": "Camera animations and controls have been updated for smoother performance."
+        },
+        {
+          "type": "add",
+          "text": "The angles for photo and video capture in the Camera app are now wider."
+        },
+        {
+          "type": "add",
+          "text": "An issue with small photos in Frogger and Frogram has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "An issue where messages from the new account were loading incorrectly when switching accounts has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Several server-side bugs have been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Glitches in the emoji tab of social media apps have been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Color issues in the Swiper app while in Light mode have been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Searches in the Music app have been optimized. If you want to avoid issues while searching, create a playlist with the songs you listen to most often and play them from the playlist."
+        },
+        {
+          "type": "fix",
+          "text": "The comment, like, and retweet icons in Frogger have been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "A Wide button has been added to the Camera app; you can now take photos at wider angles."
+        },
+        {
+          "type": "fix",
+          "text": "The black screen issue that occurred when exiting the app while in the video tab of the Camera app has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "An animation has been added when switching between front and back cameras in the camera app."
+        },
+        {
+          "type": "fix",
+          "text": "The issue where the second video would become corrupted when recording two videos back-to-back in the camera app has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Color issues in the Swiper app in Light mode have been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "An issue with small photos in Frogger and Frogram has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "The duration slider in Dynamic Island and the Music app has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "An issue where icons were not displaying in the Company app has been fixed."
+        },
+        {
+          "type": "change",
+          "text": "Changed files: html (remove old html file and put new), cl_config.lua (added foffy config), sv_config.lua (added foffy config), locales, fxmanifest.lua, safeevents.txt"
+        }
+      ]
+    },
+    {
+      "version": "1.22",
+      "date": "2026-03-07",
+      "changes": [
+        {
+          "type": "add",
+          "text": "Yellowpage has been redesigned."
+        },
+        {
+          "type": "add",
+          "text": "A streaming app has been added. You can open a broadcast and chat with viewers, and viewers can send you donations in any amount they want."
+        },
+        {
+          "type": "add",
+          "text": "Viewers can now hear the voices of the broadcaster and the people next to the broadcaster."
+        },
+        {
+          "type": "fix",
+          "text": "The issue where the most used hashtags were missing on the Frogger search page has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "The Frogram, Frogger, and Frogly notification pages have been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "The issue where posts did not display correctly on the Frogly profile has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "When a new post was made while on the Frogger profile, it also appeared on the profile; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "You can now delete notifications by holding and dragging them upwards."
+        },
+        {
+          "type": "fix",
+          "text": "The text shift in the music search section has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "A bug occurred when an airdrop arrived while the flashlight was on; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "The issue where the character would freeze when pressing buttons like the like button in Swiper has been fixed."
+        },
+        {
+          "type": "change",
+          "text": "Changed files: html (remove old html file and put new), cl_config.lua, locales, fxmanifest.lua, safeevents.txt"
+        }
+      ]
+    },
+    {
+      "version": "1.2",
+      "date": "2026-03-02",
+      "changes": [
+        {
+          "type": "add",
+          "text": "A feature has been added to Frogly that allows only verified users to share posts. This way, you can use the changeappdata command to verify users and allow only those you want to share posts."
+        },
+        {
+          "type": "add",
+          "text": "Adjustments have been made to the phone prop."
+        },
+        {
+          "type": "add",
+          "text": "All social media apps have been optimized, and the lag experienced on the home page and when switching between pages has been fixed."
+        },
+        {
+          "type": "add",
+          "text": "All messaging apps have been optimized, and the lag experienced when opening the home page and conversations page has been fixed."
+        },
+        {
+          "type": "add",
+          "text": "With these updates, the phone will run 70% faster overall."
+        },
+        {
+          "type": "add",
+          "text": "The script now opens 90% faster as both client and server."
+        },
+        {
+          "type": "add",
+          "text": "Gitbook docs have been detailed."
+        },
+        {
+          "type": "add",
+          "text": "The bank now withdraws money instantly."
+        },
+        {
+          "type": "add",
+          "text": "A new addSystemBill export has been added to the server side for tax systems on the invoice."
+        },
+        {
+          "type": "add",
+          "text": "The entire phone has been converted to SQL. When the script opens, it will automatically install and create all necessary SQL files on your server along with your old data. If you have a large amount of data, monitor the console and do not perform any actions until all migration processes are complete. After completion, restart the server."
+        },
+        {
+          "type": "fix",
+          "text": "ControlCenter's freezing issue has been fixed, minor adjustments made."
+        },
+        {
+          "type": "fix",
+          "text": "The icon in the top right corner of the App Store was sometimes buggy, fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Search duration was not visible on the dynamic island, fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Logs for Twitter, Instagram, Frogly, Swiper, and company messages have been detailed."
+        },
+        {
+          "type": "fix",
+          "text": "Playlist cover photos were not loading when creating playlists in the music app; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "When sending money from the Messages app, the log now appears much more detailed in the bank log."
+        },
+        {
+          "type": "fix",
+          "text": "There was no log when sending the requested amount in the Messages app; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "The log for money sent from the bank has been detailed and organized."
+        },
+        {
+          "type": "fix",
+          "text": "The character was stuck when installing the app from the App Store; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Person names were not loading in Darkchat group settings; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "The character was freezing when opening the stopwatch; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "We couldn't scroll as much as we wanted in Frogram Discover and Frogly Discover; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "The emoji position was off in Frogly comments; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Messages were not visible in Frogly messages, fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Minor issues on the yellow pages have been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "The person/business owner who created the invoices can now delete them by right-clicking."
+        },
+        {
+          "type": "fix",
+          "text": "Paid invoices older than 3 months are automatically deleted."
+        },
+        {
+          "type": "fix",
+          "text": "The issue with the clock app's opening animation has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Posts in the Frogram profile are now sorted chronologically from top to bottom."
+        },
+        {
+          "type": "fix",
+          "text": "Frogger retweeted posts were not visible in the profile; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "The issue of Frogly comments not being readable in light mode has been fixed."
+        },
+        {
+          "type": "change",
+          "text": "Changed files: assets_sounds, html (remove old html file and put new), client folder, server folder, cl_config.lua, sv_config.lua, locales, fxmanifest.lua, safeevents.txt"
+        }
+      ]
+    },
+    {
+      "version": "1.11",
+      "date": "2026-02-10",
+      "changes": [
+        {
+          "type": "add",
+          "text": "The phone prop has been updated and is now more modern."
+        },
+        {
+          "type": "add",
+          "text": "All wallpapers have been changed."
+        },
+        {
+          "type": "add",
+          "text": "Settings redesigned"
+        },
+        {
+          "type": "fix",
+          "text": "Swiper data issue is fixed"
+        },
+        {
+          "type": "fix",
+          "text": "App launch animations and page transition animations have been improved."
+        },
+        {
+          "type": "fix",
+          "text": "Fixed an issue where frogly comments weren't being read in Light mode."
+        },
+        {
+          "type": "fix",
+          "text": "Added standalone to Inventory for those who want to use their phone without item queries."
+        },
+        {
+          "type": "fix",
+          "text": "Person sharing and photo sharing have been moved to Dynamic Island."
+        },
+        {
+          "type": "fix",
+          "text": "When sending messages with photos in the Messages app, they now appear separately."
+        },
+        {
+          "type": "fix",
+          "text": "Made a few minor tweaks to the Messages app."
+        },
+        {
+          "type": "fix",
+          "text": "The phrase 'No notifications' has been added to the notification page for frogram, frogger, and frogly."
+        },
+        {
+          "type": "fix",
+          "text": "Visual improvements have been made to the Music app."
+        },
+        {
+          "type": "fix",
+          "text": "Playlists could not be created in the library section of the Music app; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "The Music app's home page now runs faster."
+        },
+        {
+          "type": "fix",
+          "text": "The Gallery app has been optimized on the server side."
+        },
+        {
+          "type": "fix",
+          "text": "Tweets older than 3 months are now automatically deleted."
+        },
+        {
+          "type": "fix",
+          "text": "A small animation has been added to Frogger page transitions."
+        },
+        {
+          "type": "fix",
+          "text": "A 'resume where you left off' feature has been added to the home pages of Frogger, Frogram, and Frogly. Now, when you enter a post or profile and then exit, you resume from where you were scrolling."
+        },
+        {
+          "type": "fix",
+          "text": "The Guide section has been slightly reorganized."
+        },
+        {
+          "type": "fix",
+          "text": "The Recents section has been slightly reorganized."
+        },
+        {
+          "type": "fix",
+          "text": "The issue where the phone didn't load for some players after entering the server has been fixed."
+        },
+        {
+          "type": "change",
+          "text": "Changed files: assets_sounds, locales, html (remove old html file and put new), cl_config.lua, editable, fxmanifest.lua"
+        }
+      ]
+    },
+    {
+      "version": "1.1",
+      "date": "2026-01-30",
+      "changes": [
+        {
+          "type": "add",
+          "text": "Music app has been redesigned."
+        },
+        {
+          "type": "add",
+          "text": "You can now see popular songs on the home screen and play them quickly."
+        },
+        {
+          "type": "add",
+          "text": "Music search page design has been updated."
+        },
+        {
+          "type": "add",
+          "text": "Playlist page has been redesigned."
+        },
+        {
+          "type": "add",
+          "text": "Song editing and volume adjustment design has been updated."
+        },
+        {
+          "type": "add",
+          "text": "Messages now look more aesthetically pleasing when only photos are sent."
+        },
+        {
+          "type": "add",
+          "text": "The gallery app was redesigned from scratch."
+        },
+        {
+          "type": "add",
+          "text": "You can now add your photos to favorites, create albums, and add photos to your albums."
+        },
+        {
+          "type": "add",
+          "text": "You can also view your featured photos and videos separately on the featured page."
+        },
+        {
+          "type": "add",
+          "text": "The design for sending/receiving money in messages has been adjusted."
+        },
+        {
+          "type": "fix",
+          "text": "The issue of the volume being unnecessarily loud in music has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Music slider used to change the duration has been made more stable."
+        },
+        {
+          "type": "fix",
+          "text": "The person opening the music couldn't lower the volume; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Changes made in the equalizer without saving weren't working correctly; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "The design for adding and editing people has been slightly updated."
+        },
+        {
+          "type": "fix",
+          "text": "When searching for someone not in the game while in the Messages app, their photo and name would glitch; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Emojis were opening in the wrong place in program comments; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "The issue of GIFs not loading on the GIF page has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "When you retweeted old posts on Frogger, they appeared incorrectly on your profile. This has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Minor adjustments were made to Swiper messages."
+        },
+        {
+          "type": "fix",
+          "text": "App accounts are now sent without a password on the server side to the client."
+        },
+        {
+          "type": "fix",
+          "text": "Airdrop design has been slightly adjusted."
+        },
+        {
+          "type": "fix",
+          "text": "Last photo in the camera app was displaying incorrectly; this has been fixed."
+        },
+        {
+          "type": "change",
+          "text": "Changed files: locales, html (remove old html file and put new), editable, fxmanifest.lua"
+        }
+      ]
+    },
+    {
+      "version": "1.095",
+      "date": "2026-01-20",
+      "changes": [
+        {
+          "type": "fix",
+          "text": "The issue with notes has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "YouTube and music searches will now be much less prone to spam (the issue where nothing appeared when searching has been fixed)."
+        },
+        {
+          "type": "fix",
+          "text": "Issues such as data loading slowly and processes running with delays when entering applications have been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "General optimization has been performed."
+        },
+        {
+          "type": "fix",
+          "text": "The issue causing the notifications page to appear blank on Frogger has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "When you retweeted old posts on Frogger, they appeared incorrectly on your profile. This has been fixed."
+        },
+        {
+          "type": "change",
+          "text": "Changed files: locales, html (remove old html file and put new), editable, fxmanifest.lua"
+        }
+      ]
+    },
+    {
+      "version": "1.093",
+      "date": "2026-01-12",
+      "title": "MAJOR UPDATE 1.093",
+      "changes": [
+        {
+          "type": "add",
+          "text": "Company app redesigned."
+        },
+        {
+          "type": "add",
+          "text": "Bank app redesigned."
+        },
+        {
+          "type": "add",
+          "text": "JavaScript files have been optimized."
+        },
+        {
+          "type": "add",
+          "text": "The Company section now displays the employee's rank and whether they are on duty in detail."
+        },
+        {
+          "type": "add",
+          "text": "Now you can quickly send money to people in your contacts when sending money from the bank."
+        },
+        {
+          "type": "add",
+          "text": "When adding a new user in message group, you used to have to enter the number manually. Now you can easily select from your contacts or enter it manually."
+        },
+        {
+          "type": "add",
+          "text": "The lock screen has been adapted to light mode."
+        },
+        {
+          "type": "add",
+          "text": "The design of notifications has been updated."
+        },
+        {
+          "type": "fix",
+          "text": "In Company app, when depositing or withdrawing money from the cash register/firing someone/changing rank, it was not updating instantly; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "The text translations in the Company application have been corrected."
+        },
+        {
+          "type": "fix",
+          "text": "The name and photo of the person newly added to the group were not visible in the messages; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "When the driver played a song in the music app, passengers in other seats couldn't hear it in some cases; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "The icon was not visible in call notifications; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "When app names were long, the apps on the home screen would shift to the left or right; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "The fuel leakage in vehicles called by the valet has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Bank transaction older than one month are now automatically deleted."
+        },
+        {
+          "type": "change",
+          "text": "Changed files: locales, html (remove old html file and put new), editable/cl_config.lua, editable/sv_config.lua, fxmanifest.lua"
+        }
+      ]
+    },
+    {
+      "version": "1.09",
+      "date": "2026-01-03",
+      "title": "MAJOR UPDATE 1.09",
+      "changes": [
+        {
+          "type": "add",
+          "text": "The assistant app is active again. You can also make it draw pictures by typing 'draw a cat' or chat with it. (Don't expect high-quality results.)"
+        },
+        {
+          "type": "add",
+          "text": "Invoices app has been redesigned."
+        },
+        {
+          "type": "add",
+          "text": "Garage app has been redesigned."
+        },
+        {
+          "type": "add",
+          "text": "App Store app has been redesigned."
+        },
+        {
+          "type": "add",
+          "text": "Messages > Profile has been updated."
+        },
+        {
+          "type": "add",
+          "text": "Light (default), dark, and tinted (you can choose the color yourself) modes have now been added for all app icons. To edit, right-click on any app on the home screen and press the 'Edit' button in the upper left corner."
+        },
+        {
+          "type": "add",
+          "text": "The ability to comment on comments has been added to Frogger."
+        },
+        {
+          "type": "add",
+          "text": "A retweet feature has been added to Frogger. You can add your own message and photo when retweeting posts."
+        },
+        {
+          "type": "add",
+          "text": "App moving on the home screen has been improved; apps can now be placed in empty slots (they don't have to be next to each other)."
+        },
+        {
+          "type": "fix",
+          "text": "You can now charge a fee for calling a vehicle with the valet service."
+        },
+        {
+          "type": "fix",
+          "text": "When entering the app, notifications on the lock screen were not being cleared; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Now when you delete the app, it automatically logs you out of your account."
+        },
+        {
+          "type": "fix",
+          "text": "Apps couldn't be moved to other pages on the home screen; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "After opening Music, the dynamic island appeared black, and the volume and bass adjustment bars in the Music app were broken; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "When performing operations on PlayerData, the RAM usage spiked; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "The character name of a person who left Darkchat was visible to other group members; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "In the Yellow Pages app, you couldn't view both photos in listings with two photos. This has been fixed."
+        },
+        {
+          "type": "change",
+          "text": "Changed files: locales, html (remove old html file and put new), editable, editable/cl_config.lua (replace Config.apps), fxmanifest.lua"
+        }
+      ]
+    },
+    {
+      "version": "1.08",
+      "date": "2025-12-18",
+      "title": "HOT FIXES 1.08",
+      "changes": [
+        {
+          "type": "add",
+          "text": "The Swiper (Tinder) app has been added. You have 10 swipes per day; you can purchase Swiper Gold for unlimited swipes."
+        },
+        {
+          "type": "add",
+          "text": "A language change option has been added to Settings."
+        },
+        {
+          "type": "add",
+          "text": "A 'About Phone' section has been added to Settings."
+        },
+        {
+          "type": "add",
+          "text": "A member limit has been added to Darkchat."
+        },
+        {
+          "type": "add",
+          "text": "You can now change the font, color, and blend effect of the clock on the lock screen."
+        },
+        {
+          "type": "fix",
+          "text": "Pressing the flashlight on the lock screen used to take you to the home screen; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Your home screen and lock screen wallpapers will no longer appear on your other characters."
+        },
+        {
+          "type": "fix",
+          "text": "Expired yellow pages, news, recent calls, and mails are now being deleted."
+        },
+        {
+          "type": "fix",
+          "text": "App notifications older than 1 month are now deleted."
+        },
+        {
+          "type": "fix",
+          "text": "The lag issue in messages in the Hacker app has been fixed; old messages now load when scrolled up."
+        },
+        {
+          "type": "fix",
+          "text": "In some cases, when saving 1 note, 2 were saved; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Notes were rarely not visible in the Notes app; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "The server side of the sound system has been optimized."
+        },
+        {
+          "type": "fix",
+          "text": "The changed page on the home screen will no longer reset when entering apps."
+        },
+        {
+          "type": "fix",
+          "text": "In the Messages app, it was not possible to send money to someone who was not in the game, this has been fixed."
+        },
+        {
+          "type": "change",
+          "text": "Changed files: locales, html (remove old html file and put new), editable, server/data (create folder named swiper'), fxmanifest.lua"
+        }
+      ]
+    },
+    {
+      "version": "1.071",
+      "date": "2025-12-14",
+      "title": "HOT FIXES 1.071",
+      "changes": [
+        {
+          "type": "add",
+          "text": "A call feature has been added to the Company app. The grade levels specified in the config can enable receiving calls (a maximum of 1 player can be enabled per job; this resets upon each restart or log in/out). The person who enables the call receives it directly when the job is searched for."
+        },
+        {
+          "type": "fix",
+          "text": "The server side of Frogger messages, Frogly messages, and Frogram messages has been optimized."
+        },
+        {
+          "type": "fix",
+          "text": "The server side of the audio system has been optimized."
+        },
+        {
+          "type": "fix",
+          "text": "Some people's job data was coming in as 0, it will now default to unemployed."
+        },
+        {
+          "type": "fix",
+          "text": "In the music app, new music couldn't be opened while music was playing; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "The issue of employees not appearing in the Company app has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "The pet image displayed on Dynamic Island has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "The issue of not being able to see the contact and messages in some cases has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "tgiann-hotwire support has been added for garage app."
+        },
+        {
+          "type": "fix",
+          "text": "The issue of messages not being sent in darkchat has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "cylex_youtubeApp server side RPC error fixed."
+        },
+        {
+          "type": "change",
+          "text": "Changed files: locales, html (remove old html file and put new), editable, fxmanifest.lua"
+        }
+      ]
+    },
+    {
+      "version": "1.07",
+      "date": "2025-12-09",
+      "title": "MAJOR UPDATE 1.07",
+      "changes": [
+        {
+          "type": "fix",
+          "text": "The timer section in the Clock app was broken (showing NaN), fixed."
+        },
+        {
+          "type": "fix",
+          "text": "In the Company app, when exiting/entering the app while in the Transactions section, people were not visible, fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Some people's occupation data was coming in as 0, it will now default to unemployed."
+        },
+        {
+          "type": "fix",
+          "text": "The issue of not being able to send messages in the Company app even though they were on duty has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "The issue of employees not appearing in the Company app has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Now, if you are not the boss in the company, you cannot see the deposit/withdraw buttons."
+        },
+        {
+          "type": "fix",
+          "text": "You couldn't send money to someone who wasn't in the game in the Messages app, this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Several optimizations were made to fix the UI crash in the Music app."
+        },
+        {
+          "type": "fix",
+          "text": "The mine app in the casino was not working; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "In the mine app, the money won was displayed incorrectly in the UI at high mine counts; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "The unfair profit issue in the dice app in the casino has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "The issue where vehicle names were not visible in the garage app has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "tgiann-inventory support has been added."
+        },
+        {
+          "type": "fix",
+          "text": "An Auth with cloud sync system has been added. Please delete all clients and servers (except the data folder) and place the files from the update."
+        },
+        {
+          "type": "fix",
+          "text": "GarageData has been added to Config for situations where a vehicle cannot be removed with the valet if there is an invoice."
+        },
+        {
+          "type": "change",
+          "text": "Changed files: client  (remove all old client files and put new ones), server (remove all old server files and put new ones), core (remove folder), sound (remove folder), locales, html (remove old html file and put new), editable, fxmanifest.lua"
+        }
+      ]
+    },
+    {
+      "version": "1.052",
+      "date": "2025-11-18",
+      "title": "Cylex Phone",
+      "changes": [
+        {
+          "type": "add",
+          "text": "The notes app is now more detailed"
+        },
+        {
+          "type": "add",
+          "text": "2 new games have been added."
+        },
+        {
+          "type": "fix",
+          "text": "The music app no longer works with state bag, and the timeout issue experienced by 250+ players has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "At 2k and higher resolutions, indicators such as Wi-Fi and battery were distorted, as was the phone's frame; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Phone props left in the air are now automatically deleted. (e.g., when you exit the game while holding your phone)"
+        },
+        {
+          "type": "fix",
+          "text": "The getBills export has been adjusted; if the second parameter is true, it only displays unpaid invoices."
+        },
+        {
+          "type": "fix",
+          "text": "When users of jg-advancedgarages mark a vehicle, it now displays a warning if the vehicle is not in the game."
+        },
+        {
+          "type": "fix",
+          "text": "Music app and Metube app searches now work as clients"
+        },
+        {
+          "type": "fix",
+          "text": "The issue preventing the use of GIFs in Frogger comments has been resolved."
+        },
+        {
+          "type": "fix",
+          "text": "The bills section has been removed from the banking app."
+        },
+        {
+          "type": "fix",
+          "text": "The SetVehicleFUEL function has been added to cl_functions.lua (you can now add your own fuel script export)"
+        },
+        {
+          "type": "change",
+          "text": "Changed files: client, server (without data folder), locales, html (remove old html file and put new), editable, fxmanifest.lua"
+        }
+      ]
+    },
+    {
+      "version": "1.05",
+      "date": "2025-10-03",
+      "title": "Cylex Phone",
+      "changes": [
+        {
+          "type": "add",
+          "text": "Significant performance improvements have been made."
+        },
+        {
+          "type": "add",
+          "text": "Page transition animations on the main screen are now smoother."
+        },
+        {
+          "type": "add",
+          "text": "Unwatched stories now appear in rainbow colors in the program. (If you've watched them, they appear gray.)"
+        },
+        {
+          "type": "add",
+          "text": "Alarms and timers now work on a character basis."
+        },
+        {
+          "type": "add",
+          "text": "Recent calls are now automatically deleted after 14 days."
+        },
+        {
+          "type": "fix",
+          "text": "When sharing posts in Frogram, 4:3 photos could not be shared; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Issues with 2k resolution in Frogram stories have been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "The issue of photos appearing in pairs and old photos appearing at the top when sharing posts in Frogram has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "The white space visible in the frame on black interfaces has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "The thickness of the black frame around the phone has been reduced."
+        },
+        {
+          "type": "fix",
+          "text": "Fixed an issue where stories posted in the program appeared broken if there was no photo."
+        },
+        {
+          "type": "fix",
+          "text": "Unwatched stories now appear in rainbow colors in the program. (If you've watched them, they appear gray.)"
+        },
+        {
+          "type": "change",
+          "text": "Changed files: client, server (without data folder), locales, html (remove old html file and put new), editable, fxmanifest.lua"
+        }
+      ]
+    },
+    {
+      "version": "1.04",
+      "date": "2025-09-05",
+      "title": "Cylex Phone",
+      "changes": [
+        {
+          "type": "add",
+          "text": "Clock app has been added."
+        },
+        {
+          "type": "add",
+          "text": "When the alarm goes off, you can snooze or stop it. People around you in the game can hear the alarm sound."
+        },
+        {
+          "type": "add",
+          "text": "The phone appears in the bottom right corner 5 minutes before the alarm or timer goes off."
+        },
+        {
+          "type": "add",
+          "text": "You can now change the color of the phone's frame in the settings. You can also choose Custom and set the color you want."
+        },
+        {
+          "type": "add",
+          "text": "op-garages support has been added."
+        },
+        {
+          "type": "add",
+          "text": "App opening animation is changed."
+        },
+        {
+          "type": "add",
+          "text": "You can now quickly go to that letter's category by clicking on the blue letters in the contacts."
+        },
+        {
+          "type": "fix",
+          "text": "The coin icons in the banking app have been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "When someone called you while you were on a call, the automatic ‘I called you but couldn't reach you’ message wasn't being sent; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "When creating a group in the Messages app, adding the same people would redirect you to someone else's group; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Server-side sendMail export has been added, sendMail event has been removed."
+        },
+        {
+          "type": "fix",
+          "text": "When everyone's billing settings were disabled in Config, professions couldn't bill. This has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "The GiveVehicleKey function has been added to Config so it can give keys to the valet."
+        },
+        {
+          "type": "fix",
+          "text": "You can now see whether the other user has accepted what you sent via airdrop."
+        },
+        {
+          "type": "fix",
+          "text": "The issue of being able to send to the same person repeatedly via airdrop has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "When sending someone via airdrop, if their photo was broken, it looked distorted; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "There are now 2 photos per row in the program discovery, not 3."
+        },
+        {
+          "type": "fix",
+          "text": "Videos in the program discovery were opening slowly and causing the phone to lag; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "The esx:onPlayerSpawn event has been added for the phone to load when entering the esx game."
+        },
+        {
+          "type": "fix",
+          "text": "Batch save has also been implemented for Appaccounts. (It doesn't save repeatedly; it saves every 10 seconds)."
+        },
+        {
+          "type": "fix",
+          "text": "Job and shift queries in the Company app weren't working in esx; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Frogram was showing 2 stories when a story was shared, fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Fixed apps not showing up when the phone restarted or when some players entered the game."
+        },
+        {
+          "type": "change",
+          "text": "Changed files: client, server (without data folder), locales, html, core, editable, fxmanifest.lua"
+        }
+      ]
+    },
+    {
+      "version": "1.02",
+      "date": "2025-07-31",
+      "title": "Cylex Phone",
+      "changes": [
+        {
+          "type": "add",
+          "text": "The colors of the music app have been changed."
+        },
+        {
+          "type": "add",
+          "text": "Now, people with the same job in companies can send messages outside of working hours. They cannot see their own messages when they are on duty."
+        },
+        {
+          "type": "fix",
+          "text": "When a new post arrived while on your Twitter profile, the posts were visible. This has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "When a post was open on Twitter, exiting/entering the application resulted in a blank screen. This has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "When switching to the lock screen while listening to music, the Dynamic Island would freeze, but this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "The issue where yellow pages were not visible for some users has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "When clicking on your own profile on Twitter, past tweets were not visible, this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "In 'Take Photo' mode, it was not possible to switch to the rear camera, this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "In 'Take Photo' mode, the camera could not be moved, this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Single messages could not be deleted in Darkchat, this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "In the Business app, not all jobs were visible when assigning jobs; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "On Twitter, clicking on a notification in the in-app notification tab did not open the post; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "When the white button (back button) was pressed on the phone, the phone would shut down instead of exiting the app; this has been fixed."
+        },
+        {
+          "type": "change",
+          "text": "Changed files: client, server (without data folder), locales, html, fxmanifest.lua"
+        }
+      ]
+    },
+    {
+      "version": "1.01",
+      "date": "2025-07-24",
+      "title": "Cylex Phone",
+      "changes": [
+        {
+          "type": "add",
+          "text": "The ALT key used to move the character while using the phone and camera can now be changed in settings."
+        },
+        {
+          "type": "add",
+          "text": "A small transaction history has been added to the calculator."
+        },
+        {
+          "type": "fix",
+          "text": "Notifications were coming even though the app was not installed, this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Bluetooth server no longer closes when restarted."
+        },
+        {
+          "type": "fix",
+          "text": "Posts were not loading when clicked on from the Twitter profile, this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Airplane mode, Wi-Fi, Bluetooth, and other information appeared to be turned off when exiting/entering the game, this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "If the photo in the address book was broken, it appeared blank; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "In Airdrop, you can now see whether the other party has accepted or rejected what you sent."
+        },
+        {
+          "type": "fix",
+          "text": "In Airdrop, you can no longer send requests to the same person repeatedly."
+        },
+        {
+          "type": "change",
+          "text": "Changed files: client, server (without data folder), locales, html, editable/cl_functions.lua, fxmanifest.lua"
+        }
+      ]
+    },
+    {
+      "version": "1.004",
+      "date": "2025-07-19",
+      "title": "Cylex Phone",
+      "changes": [
+        {
+          "type": "perf",
+          "text": "General RAM and performance improvements have been made."
+        },
+        {
+          "type": "perf",
+          "text": "All Twitter has been optimized."
+        },
+        {
+          "type": "perf",
+          "text": "Now, when Twitter opens, there will be no freezing, and it will open much faster."
+        },
+        {
+          "type": "fix",
+          "text": "Now, when you can't find a photo in the music app, it shows a more accurate photo."
+        },
+        {
+          "type": "fix",
+          "text": "Frogly discoveries were not sorted by date, this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "When driving, you could move the car by opening the camera and pressing the bottom button; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "When using the rear camera, you couldn't see yourself in the mirrors; this has been fixed."
+        },
+        {
+          "type": "change",
+          "text": "Changed files: client, server (without data folder), locales, html, fxmanifest.lua"
+        }
+      ]
+    },
+    {
+      "version": "1.003",
+      "date": "2025-07-16",
+      "title": "Cylex Phone",
+      "changes": [
+        {
+          "type": "perf",
+          "text": "Logging in/out of app accounts has been sped up."
+        },
+        {
+          "type": "add",
+          "text": "Zoom in/out has been added to the front camera."
+        },
+        {
+          "type": "add",
+          "text": "The camera has been updated."
+        },
+        {
+          "type": "add",
+          "text": "Discord links can no longer be added to the gallery and general photos."
+        },
+        {
+          "type": "add",
+          "text": "When in selfie mode, pressing the bottom button now allows you to move the camera up and down with the mouse and rotate the character with the left and right mouse buttons."
+        },
+        {
+          "type": "fix",
+          "text": "The issue of exiting the app while tapping cards in Unoda has been resolved."
+        },
+        {
+          "type": "fix",
+          "text": "The issue of names not appearing on invoices has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "The issue of character data being corrupted when logging out has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "The issue of not being able to see the button in the news app has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "The issue of being able to click on pd without pd in the invoices app has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "The issue of not being able to capture the job when the phone is first turned on has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "The issue where you couldn't see yourself in mirrors while using the rear camera has been fixed."
+        },
+        {
+          "type": "change",
+          "text": "Changed files: client, server (without data folder), locales, html, editable/sv_config.lua"
+        }
+      ]
+    },
+    {
+      "version": "1.002",
+      "date": "2025-07-11",
+      "title": "Cylex Phone",
+      "changes": [
+        {
+          "type": "perf",
+          "text": "The backend of messages has been optimized."
+        },
+        {
+          "type": "fix",
+          "text": "When calling from a private number, an automatic message was sent if the person was not in the game; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "When logging out of an account in the app and creating a new account, messages from the old account remained; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Long names were scrolling down in the businesses section of the businesses app, fixed."
+        },
+        {
+          "type": "fix",
+          "text": "In the businesses app, if no one is on duty in the professions, it doesn't show up in green."
+        },
+        {
+          "type": "fix",
+          "text": "When sending a new message, if the list was too long, you couldn't scroll down, fixed."
+        },
+        {
+          "type": "fix",
+          "text": "After adding a video in messages, it couldn't be removed from the preview, fixed."
+        },
+        {
+          "type": "change",
+          "text": "Note: After uploading the update files, create a folder named 'messages' in the server/data/messages directory, then restart."
+        }
+      ]
+    },
+    {
+      "version": "1.001",
+      "date": "2025-07-05",
+      "title": "Cylex Phone",
+      "changes": [
+        {
+          "type": "perf",
+          "text": "Notification counts on the home page have been optimized."
+        },
+        {
+          "type": "perf",
+          "text": "Airdrop performance has been improved."
+        },
+        {
+          "type": "add",
+          "text": "A swipe animation for unlocking and locking has been added to the lock screen."
+        },
+        {
+          "type": "add",
+          "text": "The date on the lock screen has been adjusted; the time and date now match the background photo's color."
+        },
+        {
+          "type": "add",
+          "text": "You can now set separate wallpapers for the home screen and lock screen. (Previously used backgrounds have been reset.)"
+        },
+        {
+          "type": "fix",
+          "text": "Posts purchased on Frogly were not updating instantly, this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Messages app notification count was not showing on first login to the game, this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "The app movement on the main page has been optimized; apps can now be moved from page 1 to page 2 and are more stable."
+        },
+        {
+          "type": "fix",
+          "text": "You can now add wallpapers either from pre-made background photos, your gallery, or by taking a photo on the spot or using a URL."
+        },
+        {
+          "type": "fix",
+          "text": "The error in the Frogly notification tab has been fixed."
+        }
+      ]
+    },
+    {
+      "version": "1.00",
+      "date": "2025-07-04",
+      "title": "Cylex Phone",
+      "changes": [
+        {
+          "type": "add",
+          "text": "Like animation added to Frogram."
+        },
+        {
+          "type": "add",
+          "text": "Speaker reactivated during calls. (beta)"
+        },
+        {
+          "type": "add",
+          "text": "A search bar has been added to the Messages app."
+        },
+        {
+          "type": "add",
+          "text": "Now, ambient sounds are recorded to video while recording video."
+        },
+        {
+          "type": "add",
+          "text": "The Control Center has been updated, and you can now mute notifications from here as well."
+        },
+        {
+          "type": "add",
+          "text": "A feature to call with a hidden number has been added. You can make a hidden call by adding # before the number you want to call in the keypad section."
+        },
+        {
+          "type": "fix",
+          "text": "Fixed issue where posts did not appear when scrolling down in Frogly."
+        },
+        {
+          "type": "fix",
+          "text": "Fixed issue where audio was recorded to video even without pressing the microphone button while recording video."
+        },
+        {
+          "type": "fix",
+          "text": "Frogly's light mode has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "The number of likes on Frogly profiles was being calculated incorrectly; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "When the phone is on silent mode, a notification now appears next to the clock."
+        },
+        {
+          "type": "fix",
+          "text": "The notification location was sometimes glitching; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "When deleting a message in the Messages app while there were unread messages, the number of unread messages remained. This has been fixed."
+        }
+      ]
+    }
+  ]
+}
