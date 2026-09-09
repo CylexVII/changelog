@@ -35,6 +35,10 @@ Dosya adı = FiveM resource adı = paket açıklamasındaki `CYLEX_SCRIPT` değe
       "version": "1.13",
       "date": "2026-09-01",
       "title": "Shell placement & performance",
+      "images": [
+        "https://i.imgur.com/abc123.png"
+      ],
+      "files": ["client", "server", "html"],
       "changes": [
         { "type": "add",    "text": "12 new interior shells have been added" },
         { "type": "fix",    "text": "Players no longer clip into the floor when opening a door" },
@@ -56,6 +60,8 @@ Dosya adı = FiveM resource adı = paket açıklamasındaki `CYLEX_SCRIPT` değe
 | `version` | evet | `1.13` — fxmanifest'teki sürümle aynı olsun |
 | `date` | evet | `YYYY-AA-GG` |
 | `title` | hayır | Sürümün tek cümlelik özeti, İngilizce. `"UPDATE 1.13"` gibi sürümü tekrarlayan başlık yazma, boş bırak |
+| `images` | hayır | Görsel adresleri. UI değişikliklerinde ekran görüntüsü koy |
+| `files` | hayır | Müşterinin güncellemesi gereken dosya/klasörler |
 | `changes` | evet | Değişiklik satırları |
 | `type` | evet | Aşağıdaki beş değerden biri |
 | `text` | evet | Değişikliğin kendisi |
@@ -71,6 +77,41 @@ Güncel sürüm ayrıca yazılmıyor — listedeki **en üstteki** kayıt günce
 | `perf` | PERF | mavi | Hız, optimizasyon |
 | `change` | CHANGED | gri | Değişen davranış, değişen dosyalar |
 | `remove` | REMOVED | kırmızı | Kaldırılan şey |
+
+---
+
+## files — değişen dosyalar
+
+Zorunlu değil ama **koy**. Müşteri güncellemeyi indirince neyi değiştireceğini bilmesi gerekiyor; yoksa hepsini elle karşılaştırıyor.
+
+```json
+"files": ["client", "server", "html", "fxmanifest.lua"]
+```
+
+Dosya adı, klasör adı veya kısa bir not olabilir:
+
+```json
+"files": ["html (remove the old html folder and replace it)", "server", "locales"]
+```
+
+Sayfada sürümün en üstünde ayrı bir kutuda, tek tek etiketler halinde görünüyor.
+
+---
+
+## images — ekran görüntüleri
+
+UI değişikliklerinde ekran görüntüsü koy. Zorunlu değil.
+
+```json
+"images": [
+  "https://i.imgur.com/abc123.png",
+  "https://i.imgur.com/def456.png"
+]
+```
+
+Doğrudan görsele giden adres olmalı (`.png`, `.jpg`, `.jpeg`, `.webp`). Imgur veya fivemanage olur; imgur'da **paylaşım sayfası değil** görselin kendi adresi lazım (`i.imgur.com/...` ile başlayan).
+
+Sayfada 16:10 küçük kareler halinde ızgara olarak çıkıyor, tıklayınca tam boyutu yeni sekmede açılıyor.
 
 ---
 
@@ -140,6 +181,8 @@ Bu klasörde çalışırken şöyle şeyler söyleyebilirsin, gerisini halleder:
 
 > cylex_phone'un 1.38'ini ekle, changed files client ve html.
 
+> cylex_housingv2 1.14'e şu iki görseli ekle: <adres> <adres>
+
 > Şu metni changelog formatına çevir ve cylex_housing.json'a ekle: <yapıştır>
 
 > index.json'a cylex_banking'i ekle, adı "Cylex Banking", paket id 6180403.
@@ -155,5 +198,22 @@ Commit'ten önce dosyanın geçerli JSON olduğundan emin ol:
 ```bash
 python -c "import json;json.load(open('cylex_phone.json',encoding='utf8'));print('ok')"
 ```
+
+---
+
+## Tek script sayfası
+
+Her script'in kendi adresi var:
+
+```
+cylexdev.com/changelog                  hepsi
+cylexdev.com/changelog/cylex_phone      sadece telefon
+```
+
+Discord'da güncelleme duyurusu atarken script'e özel adresi verebilirsin. `?script=cylex_phone` ve `#cylex_phone` de çalışıyor.
+
+`/changelog` sayfasında script'ler **en son güncellenene göre** sıralı, yeni güncellenen üstte.
+
+---
 
 Sistemin tamamı için: `../CHANGELOG-SISTEMI.md`

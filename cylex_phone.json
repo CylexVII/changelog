@@ -4,6 +4,16 @@
     {
       "version": "1.37",
       "date": "2026-09-04",
+      "files": [
+        "html (remove old html file and put new)",
+        "client",
+        "server",
+        "core",
+        "editable",
+        "locales",
+        "fxmanifest.lua",
+        "safeevents.txt"
+      ],
       "changes": [
         {
           "type": "add",
@@ -136,16 +146,21 @@
         {
           "type": "fix",
           "text": "Favorites were not working for GIFs; this has been fixed."
-        },
-        {
-          "type": "change",
-          "text": "Changed files: html (remove old html file and put new), client, server, core, editable, locales, fxmanifest.lua, safeevents.txt"
         }
       ]
     },
     {
       "version": "1.35",
       "date": "2026-07-13",
+      "files": [
+        "cylex_youtubeApp (remove old cylex_youtubeApp and put new)",
+        "html (remove old html file and put new)",
+        "client",
+        "editable",
+        "locales",
+        "fxmanifest.lua",
+        "safeevents.txt"
+      ],
       "changes": [
         {
           "type": "add",
@@ -230,16 +245,24 @@
         {
           "type": "fix",
           "text": "The Health widget was not working in some cases; this has been fixed."
-        },
-        {
-          "type": "change",
-          "text": "Changed files: cylex_youtubeApp (remove old cylex_youtubeApp and put new), html (remove old html file and put new), client, editable, locales, fxmanifest.lua, safeevents.txt"
         }
       ]
     },
     {
       "version": "1.33",
       "date": "2026-06-01",
+      "images": [
+        "https://i.imgur.com/okIQfjg.jpeg",
+        "https://i.imgur.com/0QN4dgu.jpeg",
+        "https://i.imgur.com/AiU69fl.jpeg"
+      ],
+      "files": [
+        "html (remove old html file and put new)",
+        "locales",
+        "editable/cl_config.lua",
+        "fxmanifest.lua",
+        "safeevents.txt"
+      ],
       "changes": [
         {
           "type": "add",
@@ -260,16 +283,22 @@
         {
           "type": "fix",
           "text": "Widgets have been optimized."
-        },
-        {
-          "type": "change",
-          "text": "Changed files: html (remove old html file and put new), locales, editable/cl_config.lua, fxmanifest.lua, safeevents.txt"
         }
       ]
     },
     {
       "version": "1.32",
       "date": "2026-05-29",
+      "images": [
+        "https://i.imgur.com/9WAdioj.jpeg",
+        "https://i.imgur.com/iJYEJvK.jpeg"
+      ],
+      "files": [
+        "html (remove old html file and put new)",
+        "locales",
+        "fxmanifest.lua",
+        "safeevents.txt"
+      ],
       "changes": [
         {
           "type": "add",
@@ -322,16 +351,19 @@
         {
           "type": "fix",
           "text": "A few known bugs in crypto have been fixed and optimized."
-        },
-        {
-          "type": "change",
-          "text": "Changed files: html (remove old html file and put new), locales, fxmanifest.lua, safeevents.txt"
         }
       ]
     },
     {
       "version": "1.31",
       "date": "2026-05-27",
+      "files": [
+        "html (remove old html file and put new)",
+        "locales",
+        "editable/sv_config.lua",
+        "fxmanifest.lua",
+        "safeevents.txt"
+      ],
       "changes": [
         {
           "type": "add",
@@ -376,16 +408,20 @@
         {
           "type": "fix",
           "text": "The `add_twitter_like` command has been fixed."
-        },
-        {
-          "type": "change",
-          "text": "Changed files: html (remove old html file and put new), locales, editable/sv_config.lua, fxmanifest.lua, safeevents.txt"
         }
       ]
     },
     {
       "version": "1.28",
       "date": "2026-04-23",
+      "files": [
+        "html (remove old html file and put new)",
+        "locales",
+        "server/sv_cloudsync.lua",
+        "server/sv_utils.js (remove it)",
+        "fxmanifest.lua",
+        "safeevents.txt"
+      ],
       "changes": [
         {
           "type": "add",
@@ -494,16 +530,20 @@
         {
           "type": "fix",
           "text": "You can now edit your nickname in Frogram as well."
-        },
-        {
-          "type": "change",
-          "text": "Changed files: html (remove old html file and put new), locales, server/sv_cloudsync.lua, server/sv_utils.js (remove it), fxmanifest.lua, safeevents.txt"
         }
       ]
     },
     {
       "version": "1.26",
       "date": "2026-04-05",
+      "files": [
+        "html (remove old html file and put new)",
+        "locales",
+        "server/sv_cloudsync.lua",
+        "server/sv_utils.js (new file)",
+        "fxmanifest.lua",
+        "safeevents.txt"
+      ],
       "changes": [
         {
           "type": "add",
@@ -552,16 +592,20 @@
         {
           "type": "fix",
           "text": "In FaceTime, the camera direction could be changed without answering the call; this has been fixed."
-        },
-        {
-          "type": "change",
-          "text": "Changed files: html (remove old html file and put new), locales, server/sv_cloudsync.lua, server/sv_utils.js (new file), fxmanifest.lua, safeevents.txt"
         }
       ]
     },
     {
       "version": "1.25",
       "date": "2026-03-25",
+      "files": [
+        "html (remove old html file and put new)",
+        "cl_config.lua (added foffy config)",
+        "sv_config.lua (added foffy config)",
+        "locales",
+        "fxmanifest.lua",
+        "safeevents.txt"
+      ],
       "changes": [
         {
           "type": "add",
@@ -666,16 +710,23 @@
         {
           "type": "fix",
           "text": "An issue where icons were not displaying in the Company app has been fixed."
-        },
-        {
-          "type": "change",
-          "text": "Changed files: html (remove old html file and put new), cl_config.lua (added foffy config), sv_config.lua (added foffy config), locales, fxmanifest.lua, safeevents.txt"
         }
       ]
     },
     {
       "version": "1.22",
       "date": "2026-03-07",
+      "images": [
+        "https://i.imgur.com/Oe38MRJ.jpeg",
+        "https://i.imgur.com/iXLiAqp.jpeg"
+      ],
+      "files": [
+        "html (remove old html file and put new)",
+        "cl_config.lua",
+        "locales",
+        "fxmanifest.lua",
+        "safeevents.txt"
+      ],
       "changes": [
         {
           "type": "add",
@@ -720,16 +771,23 @@
         {
           "type": "fix",
           "text": "The issue where the character would freeze when pressing buttons like the like button in Swiper has been fixed."
-        },
-        {
-          "type": "change",
-          "text": "Changed files: html (remove old html file and put new), cl_config.lua, locales, fxmanifest.lua, safeevents.txt"
         }
       ]
     },
     {
       "version": "1.2",
       "date": "2026-03-02",
+      "files": [
+        "assets_sounds",
+        "html (remove old html file and put new)",
+        "client folder",
+        "server folder",
+        "cl_config.lua",
+        "sv_config.lua",
+        "locales",
+        "fxmanifest.lua",
+        "safeevents.txt"
+      ],
       "changes": [
         {
           "type": "add",
@@ -854,16 +912,20 @@
         {
           "type": "fix",
           "text": "The issue of Frogly comments not being readable in light mode has been fixed."
-        },
-        {
-          "type": "change",
-          "text": "Changed files: assets_sounds, html (remove old html file and put new), client folder, server folder, cl_config.lua, sv_config.lua, locales, fxmanifest.lua, safeevents.txt"
         }
       ]
     },
     {
       "version": "1.11",
       "date": "2026-02-10",
+      "files": [
+        "assets_sounds",
+        "locales",
+        "html (remove old html file and put new)",
+        "cl_config.lua",
+        "editable",
+        "fxmanifest.lua"
+      ],
       "changes": [
         {
           "type": "add",
@@ -948,16 +1010,25 @@
         {
           "type": "fix",
           "text": "The issue where the phone didn't load for some players after entering the server has been fixed."
-        },
-        {
-          "type": "change",
-          "text": "Changed files: assets_sounds, locales, html (remove old html file and put new), cl_config.lua, editable, fxmanifest.lua"
         }
       ]
     },
     {
       "version": "1.1",
       "date": "2026-01-30",
+      "images": [
+        "https://i.imgur.com/6qkT0xV.png",
+        "https://i.imgur.com/24wtmk0.png",
+        "https://i.imgur.com/RReMLc5.png",
+        "https://i.imgur.com/6Na5qn5.png",
+        "https://i.imgur.com/OHwjTsW.png"
+      ],
+      "files": [
+        "locales",
+        "html (remove old html file and put new)",
+        "editable",
+        "fxmanifest.lua"
+      ],
       "changes": [
         {
           "type": "add",
@@ -1050,16 +1121,18 @@
         {
           "type": "fix",
           "text": "Last photo in the camera app was displaying incorrectly; this has been fixed."
-        },
-        {
-          "type": "change",
-          "text": "Changed files: locales, html (remove old html file and put new), editable, fxmanifest.lua"
         }
       ]
     },
     {
       "version": "1.095",
       "date": "2026-01-20",
+      "files": [
+        "locales",
+        "html (remove old html file and put new)",
+        "editable",
+        "fxmanifest.lua"
+      ],
       "changes": [
         {
           "type": "fix",
@@ -1084,17 +1157,20 @@
         {
           "type": "fix",
           "text": "When you retweeted old posts on Frogger, they appeared incorrectly on your profile. This has been fixed."
-        },
-        {
-          "type": "change",
-          "text": "Changed files: locales, html (remove old html file and put new), editable, fxmanifest.lua"
         }
       ]
     },
     {
       "version": "1.093",
       "date": "2026-01-12",
-      "title": "MAJOR UPDATE 1.093",
+      "title": "Major update",
+      "files": [
+        "locales",
+        "html (remove old html file and put new)",
+        "editable/cl_config.lua",
+        "editable/sv_config.lua",
+        "fxmanifest.lua"
+      ],
       "changes": [
         {
           "type": "add",
@@ -1159,17 +1235,25 @@
         {
           "type": "fix",
           "text": "Bank transaction older than one month are now automatically deleted."
-        },
-        {
-          "type": "change",
-          "text": "Changed files: locales, html (remove old html file and put new), editable/cl_config.lua, editable/sv_config.lua, fxmanifest.lua"
         }
       ]
     },
     {
       "version": "1.09",
       "date": "2026-01-03",
-      "title": "MAJOR UPDATE 1.09",
+      "title": "Major update",
+      "images": [
+        "https://i.imgur.com/Cqb54nP.png",
+        "https://i.imgur.com/YSw30gB.png",
+        "https://i.imgur.com/zrvwLha.png"
+      ],
+      "files": [
+        "locales",
+        "html (remove old html file and put new)",
+        "editable",
+        "editable/cl_config.lua (replace Config.apps)",
+        "fxmanifest.lua"
+      ],
       "changes": [
         {
           "type": "add",
@@ -1238,17 +1322,25 @@
         {
           "type": "fix",
           "text": "In the Yellow Pages app, you couldn't view both photos in listings with two photos. This has been fixed."
-        },
-        {
-          "type": "change",
-          "text": "Changed files: locales, html (remove old html file and put new), editable, editable/cl_config.lua (replace Config.apps), fxmanifest.lua"
         }
       ]
     },
     {
       "version": "1.08",
       "date": "2025-12-18",
-      "title": "HOT FIXES 1.08",
+      "title": "Hotfix",
+      "images": [
+        "https://r2.fivemanage.com/BoXMcXSK4XFfESMqRhg5F/grsel_2025-12-18_221004273.png",
+        "https://r2.fivemanage.com/BoXMcXSK4XFfESMqRhg5F/grsel_2025-12-18_221039883.png",
+        "https://r2.fivemanage.com/BoXMcXSK4XFfESMqRhg5F/grsel_2025-12-18_221100163.png"
+      ],
+      "files": [
+        "locales",
+        "html (remove old html file and put new)",
+        "editable",
+        "server/data (create folder named swiper')",
+        "fxmanifest.lua"
+      ],
       "changes": [
         {
           "type": "add",
@@ -1309,17 +1401,19 @@
         {
           "type": "fix",
           "text": "In the Messages app, it was not possible to send money to someone who was not in the game, this has been fixed."
-        },
-        {
-          "type": "change",
-          "text": "Changed files: locales, html (remove old html file and put new), editable, server/data (create folder named swiper'), fxmanifest.lua"
         }
       ]
     },
     {
       "version": "1.071",
       "date": "2025-12-14",
-      "title": "HOT FIXES 1.071",
+      "title": "Hotfix",
+      "files": [
+        "locales",
+        "html (remove old html file and put new)",
+        "editable",
+        "fxmanifest.lua"
+      ],
       "changes": [
         {
           "type": "add",
@@ -1364,17 +1458,23 @@
         {
           "type": "fix",
           "text": "cylex_youtubeApp server side RPC error fixed."
-        },
-        {
-          "type": "change",
-          "text": "Changed files: locales, html (remove old html file and put new), editable, fxmanifest.lua"
         }
       ]
     },
     {
       "version": "1.07",
       "date": "2025-12-09",
-      "title": "MAJOR UPDATE 1.07",
+      "title": "Major update",
+      "files": [
+        "client  (remove all old client files and put new ones)",
+        "server (remove all old server files and put new ones)",
+        "core (remove folder)",
+        "sound (remove folder)",
+        "locales",
+        "html (remove old html file and put new)",
+        "editable",
+        "fxmanifest.lua"
+      ],
       "changes": [
         {
           "type": "fix",
@@ -1435,17 +1535,20 @@
         {
           "type": "fix",
           "text": "GarageData has been added to Config for situations where a vehicle cannot be removed with the valet if there is an invoice."
-        },
-        {
-          "type": "change",
-          "text": "Changed files: client  (remove all old client files and put new ones), server (remove all old server files and put new ones), core (remove folder), sound (remove folder), locales, html (remove old html file and put new), editable, fxmanifest.lua"
         }
       ]
     },
     {
       "version": "1.052",
       "date": "2025-11-18",
-      "title": "Cylex Phone",
+      "files": [
+        "client",
+        "server (without data folder)",
+        "locales",
+        "html (remove old html file and put new)",
+        "editable",
+        "fxmanifest.lua"
+      ],
       "changes": [
         {
           "type": "add",
@@ -1490,17 +1593,20 @@
         {
           "type": "fix",
           "text": "The SetVehicleFUEL function has been added to cl_functions.lua (you can now add your own fuel script export)"
-        },
-        {
-          "type": "change",
-          "text": "Changed files: client, server (without data folder), locales, html (remove old html file and put new), editable, fxmanifest.lua"
         }
       ]
     },
     {
       "version": "1.05",
       "date": "2025-10-03",
-      "title": "Cylex Phone",
+      "files": [
+        "client",
+        "server (without data folder)",
+        "locales",
+        "html (remove old html file and put new)",
+        "editable",
+        "fxmanifest.lua"
+      ],
       "changes": [
         {
           "type": "add",
@@ -1549,17 +1655,25 @@
         {
           "type": "fix",
           "text": "Unwatched stories now appear in rainbow colors in the program. (If you've watched them, they appear gray.)"
-        },
-        {
-          "type": "change",
-          "text": "Changed files: client, server (without data folder), locales, html (remove old html file and put new), editable, fxmanifest.lua"
         }
       ]
     },
     {
       "version": "1.04",
       "date": "2025-09-05",
-      "title": "Cylex Phone",
+      "images": [
+        "https://r2.fivemanage.com/sAW1hGdsvM6TqiMMzw2Vt/resim_2025-09-05_200334644.png",
+        "https://r2.fivemanage.com/sAW1hGdsvM6TqiMMzw2Vt/resim_2025-09-05_200416623.png"
+      ],
+      "files": [
+        "client",
+        "server (without data folder)",
+        "locales",
+        "html",
+        "core",
+        "editable",
+        "fxmanifest.lua"
+      ],
       "changes": [
         {
           "type": "add",
@@ -1652,17 +1766,19 @@
         {
           "type": "fix",
           "text": "Fixed apps not showing up when the phone restarted or when some players entered the game."
-        },
-        {
-          "type": "change",
-          "text": "Changed files: client, server (without data folder), locales, html, core, editable, fxmanifest.lua"
         }
       ]
     },
     {
       "version": "1.02",
       "date": "2025-07-31",
-      "title": "Cylex Phone",
+      "files": [
+        "client",
+        "server (without data folder)",
+        "locales",
+        "html",
+        "fxmanifest.lua"
+      ],
       "changes": [
         {
           "type": "add",
@@ -1715,17 +1831,20 @@
         {
           "type": "fix",
           "text": "When the white button (back button) was pressed on the phone, the phone would shut down instead of exiting the app; this has been fixed."
-        },
-        {
-          "type": "change",
-          "text": "Changed files: client, server (without data folder), locales, html, fxmanifest.lua"
         }
       ]
     },
     {
       "version": "1.01",
       "date": "2025-07-24",
-      "title": "Cylex Phone",
+      "files": [
+        "client",
+        "server (without data folder)",
+        "locales",
+        "html",
+        "editable/cl_functions.lua",
+        "fxmanifest.lua"
+      ],
       "changes": [
         {
           "type": "add",
@@ -1762,17 +1881,19 @@
         {
           "type": "fix",
           "text": "In Airdrop, you can no longer send requests to the same person repeatedly."
-        },
-        {
-          "type": "change",
-          "text": "Changed files: client, server (without data folder), locales, html, editable/cl_functions.lua, fxmanifest.lua"
         }
       ]
     },
     {
       "version": "1.004",
       "date": "2025-07-19",
-      "title": "Cylex Phone",
+      "files": [
+        "client",
+        "server (without data folder)",
+        "locales",
+        "html",
+        "fxmanifest.lua"
+      ],
       "changes": [
         {
           "type": "perf",
@@ -1801,17 +1922,19 @@
         {
           "type": "fix",
           "text": "When using the rear camera, you couldn't see yourself in the mirrors; this has been fixed."
-        },
-        {
-          "type": "change",
-          "text": "Changed files: client, server (without data folder), locales, html, fxmanifest.lua"
         }
       ]
     },
     {
       "version": "1.003",
       "date": "2025-07-16",
-      "title": "Cylex Phone",
+      "files": [
+        "client",
+        "server (without data folder)",
+        "locales",
+        "html",
+        "editable/sv_config.lua"
+      ],
       "changes": [
         {
           "type": "perf",
@@ -1860,17 +1983,12 @@
         {
           "type": "fix",
           "text": "The issue where you couldn't see yourself in mirrors while using the rear camera has been fixed."
-        },
-        {
-          "type": "change",
-          "text": "Changed files: client, server (without data folder), locales, html, editable/sv_config.lua"
         }
       ]
     },
     {
       "version": "1.002",
       "date": "2025-07-11",
-      "title": "Cylex Phone",
       "changes": [
         {
           "type": "perf",
@@ -1909,7 +2027,6 @@
     {
       "version": "1.001",
       "date": "2025-07-05",
-      "title": "Cylex Phone",
       "changes": [
         {
           "type": "perf",
@@ -1956,7 +2073,6 @@
     {
       "version": "1.00",
       "date": "2025-07-04",
-      "title": "Cylex Phone",
       "changes": [
         {
           "type": "add",
