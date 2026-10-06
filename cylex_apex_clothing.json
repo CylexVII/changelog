@@ -4,7 +4,48 @@
     {
       "version": "1.0.2",
       "date": "2026-10-06",
-      "changes": []
+      "changes": [
+        {
+          "type": "add",
+          "text": "Character creation now survives a crash: if the game crashes, times out or your PC shuts down before you save, you continue editing from where you left off the next time you join"
+        },
+        {
+          "type": "add",
+          "text": "Eye colors are now shown as images instead of a plain list"
+        },
+        {
+          "type": "add",
+          "text": "Skin tone now has a Second Color and a Blend option"
+        },
+        {
+          "type": "add",
+          "text": "Body blemishes have been added to the Skin tab as their own category"
+        },
+        {
+          "type": "fix",
+          "text": "The fade no longer disappears when you change your hairstyle"
+        },
+        {
+          "type": "fix",
+          "text": "The fade can now be removed again"
+        },
+        {
+          "type": "fix",
+          "text": "A problem with hairstyles has been fixed"
+        },
+        {
+          "type": "fix",
+          "text": "Several problems with CTRL+Z have been fixed"
+        },
+        {
+          "type": "fix",
+          "text": "Saved outfits can now be deleted"
+        },
+        {
+          "type": "perf",
+          "text": "Server-side performance has been improved"
+        }
+      ]
     }
   ]
 }
