@@ -45,8 +45,16 @@
       "name": "Cylex Dispatch"
     },
     {
-      "key": "cylex_zuno",
-      "name": "Cylex Zuno"
+      "key": "cylex_wildcard",
+      "name": "Cylex Wildcard"
+    },
+    {
+      "key": "cylex_apex_clothing",
+      "name": "Cylex Apex Clothing"
+    },
+    {
+      "key": "cylex_ui",
+      "name": "Cylex UI"
     }
   ]
 }

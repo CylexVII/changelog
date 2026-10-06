@@ -13,7 +13,9 @@ CylexVII/changelog/
 
 Commit attığın an site güncellenir. GitHub'ın CDN'i ~5 dakika cache tuttuğu için hemen değil, birkaç dakika içinde.
 
-Sürüm kontrolü ayrı repoda: `CylexVII/versionchecker/<resource>.txt`. Orası çıplak sürüm numarası, `update.lua` onu okuyor — karıştırma.
+Script'in `update.lua`'sı da bu dosyayı okuyor: `entries` listesinin **en üstteki** kaydı güncel sürüm sayılıyor. Yani sürümü burada güncellediğinde hem site hem oyun içi kontrol aynı anda güncelleniyor, ayrıca bir yere yazman gerekmiyor.
+
+**Dikkat:** `version` alanı fxmanifest'teki `version` ile **birebir aynı** olmalı (`1.375` ≠ `1.37`). Eşleşmezse güncel müşterinin konsoluna "eski sürümdesin" yazar.
 
 ---
 
@@ -151,8 +153,10 @@ Uzun sürümlerde konu başlığı ekleyebilirsin:
 
 1. İlgili dosyayı aç
 2. `entries` dizisinin **en başına** yeni bir kayıt ekle
-3. `versionchecker` reposundaki `<resource>.txt` dosyasını da aynı sürüme güncelle
+3. `version` alanının fxmanifest'teki sürümle aynı olduğundan emin ol
 4. Commit
+
+Müşteri eski sürümdeyse sunucu konsolunda aradaki sürümler listeleniyor — sürüm başına en fazla 3 satır, toplam 15 satır. Yani ilk 3 değişikliği en önemlileri olacak şekilde sırala.
 
 ---
 
