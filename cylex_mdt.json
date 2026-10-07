@@ -1,0 +1,165 @@
+{
+  "package": "Cylex MDT",
+  "entries": [
+    {
+      "version": "1.2",
+      "date": "2026-10-07",
+      "title": "lb-tablet migration, licence points and safer evidence handling",
+      "files": [
+        "client",
+        "server (includes the new migrate folder)",
+        "html (replace the old folder)",
+        "editable/framework",
+        "editable/locales",
+        "editable/config.lua (new LicensePoints section)",
+        "fxmanifest.lua"
+      ],
+      "changes": [
+        {
+          "type": "add",
+          "text": "lb-tablet migration: reports, warrants, citizen and vehicle notes, personal notes, weapons, charges, tags and jail records can now be moved into the MDT with the mdt_migrate console command. It has a dry run, can be run again safely and never writes to lb-tablet's tables"
+        },
+        {
+          "type": "add",
+          "text": "Licence penalty points: every licence on a citizen profile now shows its points, and officers with edit permission can raise or lower them. The points are shared with lb-tablet"
+        },
+        {
+          "type": "fix",
+          "text": "Saving an edited report no longer loses its suspects, charges or linked citizens"
+        },
+        {
+          "type": "add",
+          "text": "A licence detail window has been added, showing status, expiry, issuing officer and points. Banning, unbanning and removing a licence are now done from this window"
+        },
+        {
+          "type": "add",
+          "text": "On start, the server console lists every MDT item that is missing from your inventory"
+        },
+        {
+          "type": "fix",
+          "text": "Collecting or processing evidence no longer uses up the bag or the evidence when the result item is not defined or the inventory is full"
+        },
+        {
+          "type": "fix",
+          "text": "Printing and the forensics lab now say whether the inventory is full or the item is not defined, instead of always reporting a full inventory"
+        },
+        {
+          "type": "fix",
+          "text": "Officers now get a notification when they lack permission for an action, instead of the button doing nothing"
+        },
+        {
+          "type": "fix",
+          "text": "The CCTV screen filter no longer stays on screen after leaving a camera"
+        },
+        {
+          "type": "fix",
+          "text": "If a note fails to save, the editor stays open so the text is not lost"
+        },
+        {
+          "type": "fix",
+          "text": "Tags the server refuses no longer appear on reports or citizen profiles"
+        },
+        {
+          "type": "change",
+          "text": "Licences on the citizen profile are now listed in a fixed alphabetical order"
+        },
+        {
+          "type": "change",
+          "text": "The live map can now be zoomed out one step further"
+        }
+      ]
+    },
+    {
+      "version": "1.16",
+      "date": "2026-09-13",
+      "title": "CCTV, printed reports and department chat",
+      "files": [
+        "client",
+        "server",
+        "shared",
+        "html (replace the old folder)",
+        "editable/cameras.lua (new file)",
+        "editable/client_open.lua",
+        "editable/framework",
+        "editable/locales",
+        "editable/config.lua (new CCTV, Chat, PrintedDocument and GlobalAccess sections)",
+        "editable/sv_config.lua (new chat webhook)",
+        "fxmanifest.lua"
+      ],
+      "changes": [
+        {
+          "type": "add",
+          "text": "CCTV: 586 city cameras can now be watched live from the MDT, with pan, zoom, camera switching and a tour mode. Officers can pin up to 25 cameras, and every camera view is logged"
+        },
+        {
+          "type": "add",
+          "text": "Printed reports: a report can be printed as an inventory item that anyone holding it can read. Includes a print designer (layout, fonts, colour, watermark, signature), public or classified copies, document verification and a copy limit"
+        },
+        {
+          "type": "add",
+          "text": "Department chat: every department gets its own channel, and custom or cross-department channels can be opened. Supports mentions, emoji, report links, location sharing, a typing indicator and an unread counter, and messages can be posted to Discord as digests"
+        },
+        {
+          "type": "add",
+          "text": "A cross-department oversight role (DOJ, FBI, etc.) has been added. It can see and manage every department and can optionally stay hidden from the others"
+        },
+        {
+          "type": "add",
+          "text": "Cameras can be attached to incident reports, with the cameras nearest the incident listed first"
+        },
+        {
+          "type": "add",
+          "text": "Report edit logs now show exactly which fields were changed, both on the Logs page and in Discord"
+        },
+        {
+          "type": "add",
+          "text": "cuffy_phone support has been added, and cylex_phone now shows phone numbers for offline citizens too"
+        },
+        {
+          "type": "add",
+          "text": "A vest slot has been added to the Uniforms page"
+        },
+        {
+          "type": "change",
+          "text": "The Citizens page has been redesigned with photo cards and now shows the total page count"
+        },
+        {
+          "type": "change",
+          "text": "Warrant and BOLO cards have been redesigned to show the photo, time remaining and priority"
+        },
+        {
+          "type": "fix",
+          "text": "\"Illegal mix of collations\" database errors no longer occur on servers whose tables use different collations, including bcs_housing tables"
+        },
+        {
+          "type": "fix",
+          "text": "Officers who lose their police job now leave the roster right away, and leftover entries are cleaned up on restart"
+        },
+        {
+          "type": "fix",
+          "text": "Vehicles opened from a citizen profile now show their owner and model"
+        },
+        {
+          "type": "fix",
+          "text": "Evidence spots can be reached with qb-target again"
+        },
+        {
+          "type": "fix",
+          "text": "ESC no longer closes the MDT while a camera feed or a printed document is open"
+        },
+        {
+          "type": "fix",
+          "text": "Officers can no longer edit another department's records"
+        },
+        {
+          "type": "fix",
+          "text": "ESX: the Citizens list now shows the occupation instead of an ID"
+        },
+        {
+          "type": "fix",
+          "text": "A citizen photo that fails to load now shows an icon instead of an empty box"
+        }
+      ]
+    }
+  ]
+}
