@@ -2,6 +2,68 @@
   "package": "Cylex Apex Housing",
   "entries": [
     {
+      "version": "2.0",
+      "date": "2026-10-07",
+      "title": "Redesigned interface, Discord logging and resource rename",
+      "files": [
+        "cylex_apex_housing (replace the whole folder, then copy your config back)"
+      ],
+      "changes": [
+        {
+          "type": "add",
+          "text": "The whole interface has been redesigned with the new Cylex theme: owner panel, decoration, property creator, management, listings board, garage and door screens"
+        },
+        {
+          "type": "change",
+          "text": "The resource is now called cylex_apex_housing. Rename the folder and your ensure line; your database and property data are kept"
+        },
+        {
+          "type": "add",
+          "text": "Discord logging for admins with six channels (property, economy, keys, admin, upgrades, security). Every event includes copyable coordinates"
+        },
+        {
+          "type": "add",
+          "text": "New Settings tab in the owner panel: interface size, accent colour, glass or solid look, blur strength, alert options and per-property map blip"
+        },
+        {
+          "type": "add",
+          "text": "Shell properties can have a fixed time and weather from the new Ambience tab"
+        },
+        {
+          "type": "add",
+          "text": "Lights can now cycle through RGB colours"
+        },
+        {
+          "type": "add",
+          "text": "Furniture shows its name when you hover over it in decoration mode"
+        },
+        {
+          "type": "add",
+          "text": "Doors tab: lock or unlock every door at once. Cameras can now be moved"
+        },
+        {
+          "type": "add",
+          "text": "A small Cylex signature in the bottom-left corner of the panels. It follows the accent colour and can be turned off with Config.Branding.signature"
+        },
+        {
+          "type": "change",
+          "text": "Doorbell: only key holders near the property are notified, and a ring disappears for everyone once one of them answers"
+        },
+        {
+          "type": "remove",
+          "text": "Panel open and close sounds have been removed. Click sounds remain"
+        },
+        {
+          "type": "fix",
+          "text": "Dirt and the cleaning robot now stay in sync between players. The robot no longer spawns on MLO roofs or moves back and forth between two points"
+        },
+        {
+          "type": "fix",
+          "text": "Doorbell spam protection now works correctly"
+        }
+      ]
+    },
+    {
       "version": "1.13",
       "date": "2026-09-09",
       "title": "Garage handover and cleaning fixes",
