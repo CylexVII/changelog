@@ -6,7 +6,7 @@ Bu klasördeki dosyalar **Tebex'e yüklenmez.** `github.com/CylexVII/changelog` 
 CylexVII/changelog/
   index.json
   cylex_phone.json
-  cylex_housingv2.json
+  cylex_apex_housing.json
   cylex_mdt.json
   ...
 ```
@@ -23,7 +23,7 @@ Script'in `update.lua`'sı da bu dosyayı okuyor: `entries` listesinin **en üst
 
 Dosya adı = FiveM resource adı = paket açıklamasındaki `CYLEX_SCRIPT` değeri. Üçü aynı olmak zorunda.
 
-`cylex_housingv2` → `cylex_housingv2.json`
+`cylex_apex_housing` → `cylex_apex_housing.json`
 
 ---
 
@@ -31,7 +31,7 @@ Dosya adı = FiveM resource adı = paket açıklamasındaki `CYLEX_SCRIPT` değe
 
 ```json
 {
-  "package": "Cylex Housing v2",
+  "package": "Cylex Apex Housing",
   "entries": [
     {
       "version": "1.13",
@@ -185,7 +185,7 @@ Bu klasörde çalışırken şöyle şeyler söyleyebilirsin, gerisini halleder:
 
 > cylex_phone'un 1.38'ini ekle, changed files client ve html.
 
-> cylex_housingv2 1.14'e şu iki görseli ekle: <adres> <adres>
+> cylex_apex_housing 2.1'e şu iki görseli ekle: <adres> <adres>
 
 > Şu metni changelog formatına çevir ve cylex_housing.json'a ekle: <yapıştır>
 
