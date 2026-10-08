@@ -2,6 +2,57 @@
   "package": "Cylex Apex Clothing",
   "entries": [
     {
+      "version": "1.0.3",
+      "date": "2026-10-09",
+      "title": "Favorites, and a clear answer when the skin tone does not change",
+      "files": [
+        "client/favorites.lua (new)",
+        "client/client.lua",
+        "fxmanifest.lua",
+        "game/nui.lua",
+        "html (replace the old folder)",
+        "locales/en.lua",
+        "locales/tr.lua",
+        "server/checkout.lua",
+        "shared/config/config.lua (the Intro setting was removed)",
+        "shared/config/legacy.lua"
+      ],
+      "changes": [
+        {
+          "type": "add",
+          "text": "Favorites: press the star on clothes, accessories, hairstyles, brows, beards, chest hair, makeup and tattoos to keep them, then find them all in the new Favorites tab"
+        },
+        {
+          "type": "add",
+          "text": "When the third parent's Strength is covering your skin tone, the Strength row now says so, and changing the skin tone tells you where to turn it off"
+        },
+        {
+          "type": "change",
+          "text": "Heritage > Variation is now called Third Parent and shows Shape, Skin and Strength on separate rows, like the old Race section"
+        },
+        {
+          "type": "add",
+          "text": "The Favorites tab has filters with counts and a search box, and puts an item on with one click; it can also be reached with Q / E"
+        },
+        {
+          "type": "add",
+          "text": "Favorites are saved per character and stay correct when new clothing packs are added to the server"
+        },
+        {
+          "type": "change",
+          "text": "Favorites only show what the current shop sells and what the current body type can wear; job-locked and blacklisted items stay hidden"
+        },
+        {
+          "type": "add",
+          "text": "A short opening intro plays before the first character creator; Enter or Esc skips it"
+        },
+        {
+          "type": "change",
+          "text": "Longer notifications now stay on screen longer so they can be read"
+        }
+      ]
+    },
+    {
       "version": "1.0.2",
       "date": "2026-10-06",
       "changes": [
