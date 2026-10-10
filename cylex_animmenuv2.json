@@ -1,0 +1,467 @@
+{
+  "package": "Cylex Animation Menu v2",
+  "entries": [
+    {
+      "version": "2.21",
+      "date": "2026-03-19",
+      "changes": [
+        {
+          "type": "fix",
+          "text": "PTFX sometimes did not work; this has been fixed."
+        },
+        {
+          "type": "add",
+          "text": "The PTFX key can now be changed in the config."
+        },
+        {
+          "type": "change",
+          "text": "The PTFX notification has been updated."
+        },
+        {
+          "type": "fix",
+          "text": "Animations in the shared category are now listed more accurately."
+        }
+      ]
+    },
+    {
+      "version": "2.02",
+      "date": "2026-03-02",
+      "files": [
+        "fxmanifest.lua",
+        "config.lua",
+        "client",
+        "server",
+        "locales"
+      ],
+      "changes": [
+        {
+          "type": "add",
+          "text": "Added /nearby emoteName to send an emote request to someone nearby."
+        },
+        {
+          "type": "fix",
+          "text": "Sequential animations stopped after a while instead of completing; this has been fixed."
+        },
+        {
+          "type": "add",
+          "text": "You can now smoothly switch to another sequence animation before the current one has finished."
+        },
+        {
+          "type": "add",
+          "text": "The keys for accepting/rejecting shared emotes and group requests can now be changed in config.lua."
+        },
+        {
+          "type": "add",
+          "text": "Added LocalPlayer.state.currentEmote, isDoingEmote, currentWalkstyle and currentExpression, also usable on the server side."
+        },
+        {
+          "type": "fix",
+          "text": "The /sequence command was broken; this has been fixed."
+        },
+        {
+          "type": "remove",
+          "text": "Removed server-side console prints."
+        }
+      ]
+    },
+    {
+      "version": "2.01",
+      "date": "2026-01-17",
+      "changes": [
+        {
+          "type": "add",
+          "text": "Emote wheel commands and exports have been added to the config."
+        },
+        {
+          "type": "add",
+          "text": "You can now walk while the emote wheel is open."
+        },
+        {
+          "type": "add",
+          "text": "You can now prevent the emote wheel from opening in certain situations."
+        },
+        {
+          "type": "fix",
+          "text": "Fixed the game freezing when opening the emote wheel."
+        },
+        {
+          "type": "fix",
+          "text": "Fixed GIFs not showing."
+        }
+      ]
+    },
+    {
+      "version": "2.0",
+      "date": "2026-01-16",
+      "title": "Emote groups, radial menu and menu colours",
+      "changes": [
+        {
+          "type": "add",
+          "text": "You can now create an emote group and invite people to it. Group members perform whatever animation the group owner performs, at the same time."
+        },
+        {
+          "type": "add",
+          "text": "Added a radial menu (default H, can be changed in keybinds). Arrange Fortnite-style emotes page by page and quickly use, invite or cancel them."
+        },
+        {
+          "type": "add",
+          "text": "You can now change the menu colour in settings."
+        },
+        {
+          "type": "add",
+          "text": "Each of these features can be disabled in the config."
+        }
+      ]
+    },
+    {
+      "version": "1.8.1",
+      "date": "2025-02-08",
+      "changes": [
+        {
+          "type": "add",
+          "text": "Added DefaultValues to the config (for example, which menu style players start with when they first join)."
+        },
+        {
+          "type": "fix",
+          "text": "You could not move while using prop emotes; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Fixed non-loop animations."
+        },
+        {
+          "type": "fix",
+          "text": "Fixed the sequence placeholder image."
+        },
+        {
+          "type": "remove",
+          "text": "Removed unnecessary console prints."
+        }
+      ]
+    },
+    {
+      "version": "1.8.0",
+      "date": "2025-02-07",
+      "title": "Sequences, streamer mode and the v1 style menu",
+      "changes": [
+        {
+          "type": "add",
+          "text": "Added sequences."
+        },
+        {
+          "type": "add",
+          "text": "Added streamer mode and an option to turn GIFs on/off in settings."
+        },
+        {
+          "type": "add",
+          "text": "Added the v1 style menu design."
+        },
+        {
+          "type": "add",
+          "text": "Added 3 new camp chair animations and new axe and pickaxe animations."
+        },
+        {
+          "type": "add",
+          "text": "Shared emotes now have their own category, and animations show a sign when they are shared."
+        },
+        {
+          "type": "add",
+          "text": "Added FullBody to animSettings."
+        },
+        {
+          "type": "add",
+          "text": "Added new animpos."
+        },
+        {
+          "type": "add",
+          "text": "Added missing GIFs in the animal category and in general."
+        },
+        {
+          "type": "change",
+          "text": "All non-loop animations are now looped."
+        },
+        {
+          "type": "change",
+          "text": "GIFs now load smoothly."
+        },
+        {
+          "type": "fix",
+          "text": "Some PTFX were showing black, or the PTFX colour was not working; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Animpos could leave the player inside walls; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Typing in the search box no longer opens other scripts such as chat."
+        },
+        {
+          "type": "fix",
+          "text": "Fixed the handspocket, slap, carry and standbag animations."
+        },
+        {
+          "type": "remove",
+          "text": "Removed broken gang signs and props."
+        },
+        {
+          "type": "remove",
+          "text": "Removed most of the unnecessary dances."
+        },
+        {
+          "type": "remove",
+          "text": "Removed unused custom animations from the stream folder."
+        },
+        {
+          "type": "perf",
+          "text": "Fixed performance issues while the menu is closed."
+        }
+      ]
+    },
+    {
+      "version": "1.7.0-hotfix",
+      "date": "2024-09-23",
+      "changes": [
+        {
+          "type": "fix",
+          "text": "Fixed a crash."
+        },
+        {
+          "type": "remove",
+          "text": "Gang signs were removed because they exceeded the stream limit."
+        },
+        {
+          "type": "perf",
+          "text": "Stream folder size reduced from 300 MB to 100 MB."
+        }
+      ]
+    },
+    {
+      "version": "1.7.0",
+      "date": "2024-09-20",
+      "changes": [
+        {
+          "type": "add",
+          "text": "Added 20 new Fortnite dances, 50 couple poses, and 30 male and 30 female poses."
+        },
+        {
+          "type": "add",
+          "text": "Added 250 new gang signs."
+        },
+        {
+          "type": "add",
+          "text": "Added AfterCooldown to the config, so you can add a cooldown between animations."
+        },
+        {
+          "type": "add",
+          "text": "Added the cylex_animmenuv2:client:onEmoteTriggered client event, triggered when an animation is clicked."
+        },
+        {
+          "type": "change",
+          "text": "The scrollbar now stays where it was when the menu is reopened."
+        },
+        {
+          "type": "change",
+          "text": "GIFs now load in order instead of all at once."
+        },
+        {
+          "type": "change",
+          "text": "prone.lua is no longer escrowed."
+        },
+        {
+          "type": "fix",
+          "text": "Fixed a few bugs that caused the menu to crash."
+        },
+        {
+          "type": "fix",
+          "text": "Animpos was broken when MultipleEmotes was false; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Piggyback animations are fixed."
+        },
+        {
+          "type": "perf",
+          "text": "Stream folder size reduced from 300 MB to 150 MB."
+        }
+      ]
+    },
+    {
+      "version": "1.6.5",
+      "date": "2024-07-06",
+      "changes": [
+        {
+          "type": "add",
+          "text": "Added pointing and hands up, which can be turned on/off."
+        },
+        {
+          "type": "add",
+          "text": "Added MaxZDistance for animpos to the config."
+        },
+        {
+          "type": "change",
+          "text": "Categories removed from the config are now also removed from ALL and from search."
+        },
+        {
+          "type": "fix",
+          "text": "canPlayEmote was running late on shared emotes; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "TeleportBackOnCancel was not working properly; this has been fixed."
+        }
+      ]
+    },
+    {
+      "version": "1.6.4",
+      "date": "2024-05-12",
+      "changes": [
+        {
+          "type": "add",
+          "text": "Added a canPlayEmote function to the config, so you can prevent players from using animations in certain situations."
+        },
+        {
+          "type": "add",
+          "text": "Added 10 new gang weapon hold animations."
+        },
+        {
+          "type": "fix",
+          "text": "TeleportBackOnCancel could teleport the player back even when they were too far away; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "The menu did not close when WalkInMenu was false; this has been fixed."
+        }
+      ]
+    },
+    {
+      "version": "1.6.3",
+      "date": "2024-04-12",
+      "changes": [
+        {
+          "type": "add",
+          "text": "Added a config setting to turn off +18 animations."
+        },
+        {
+          "type": "add",
+          "text": "Added a config setting to turn off prop collision in prop animations."
+        },
+        {
+          "type": "fix",
+          "text": "Other players could see the prop in preview mode on prop animations; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Typing /animpos while the menu was closed opened the menu; this has been fixed."
+        },
+        {
+          "type": "fix",
+          "text": "Crouching in the script reset the walking style; this has been fixed."
+        },
+        {
+          "type": "remove",
+          "text": "Removed the scrollbar in the category section."
+        }
+      ]
+    },
+    {
+      "version": "1.6.2",
+      "date": "2024-03-29",
+      "changes": [
+        {
+          "type": "fix",
+          "text": "Fixed animation positioning."
+        }
+      ]
+    },
+    {
+      "version": "1.6.1",
+      "date": "2024-03-24",
+      "changes": [
+        {
+          "type": "add",
+          "text": "You can now choose which buttons are disabled while the menu is open via the config."
+        },
+        {
+          "type": "fix",
+          "text": "Pressing ESC to close the menu no longer opens the map."
+        }
+      ]
+    },
+    {
+      "version": "1.6",
+      "date": "2024-03-19",
+      "title": "Big update: new couple emotes, poses and animpos improvements",
+      "changes": [
+        {
+          "type": "add",
+          "text": "Added 98 new couple emotes and 25 new poses."
+        },
+        {
+          "type": "add",
+          "text": "Added two new categories: Animal Emotes and Prop Emotes."
+        },
+        {
+          "type": "add",
+          "text": "Added the /animpos [name] command and a client export to enter animpos."
+        },
+        {
+          "type": "add",
+          "text": "Dance names can now be translated."
+        },
+        {
+          "type": "change",
+          "text": "Dances are now sorted by number in the menu."
+        },
+        {
+          "type": "change",
+          "text": "The category section now scrolls, so you can add as many categories as you want without breaking the design."
+        },
+        {
+          "type": "add",
+          "text": "You can now prevent players from using animpos in certain situations via the config."
+        },
+        {
+          "type": "add",
+          "text": "You can now turn off using animations in vehicles via the config."
+        },
+        {
+          "type": "add",
+          "text": "You can now toggle walking on/off while the menu is open via the config."
+        },
+        {
+          "type": "add",
+          "text": "You can now minimize the menu to the right with a button."
+        },
+        {
+          "type": "fix",
+          "text": "GIFs no longer break when an emote's name is changed."
+        },
+        {
+          "type": "fix",
+          "text": "Fixed a few ERP animations."
+        },
+        {
+          "type": "fix",
+          "text": "Fixed fall damage prevention by cancelling the scenario when punching, climbing, standing up or shooting."
+        },
+        {
+          "type": "fix",
+          "text": "Some scripts were breaking the animpos keys at the bottom right; this has been fixed."
+        },
+        {
+          "type": "change",
+          "text": "Animpos can no longer be opened while falling."
+        },
+        {
+          "type": "change",
+          "text": "Animpos can no longer be opened in a vehicle."
+        },
+        {
+          "type": "fix",
+          "text": "Fixed teleporting under the map while in animpos."
+        }
+      ]
+    }
+  ]
+}
