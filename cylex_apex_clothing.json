@@ -6,21 +6,27 @@
       "date": "2026-10-09",
       "title": "Favorites, and a clear answer when the skin tone does not change",
       "files": [
-        "client/favorites.lua (new)",
         "client/client.lua",
+        "client/favorites.lua (new)",
         "fxmanifest.lua",
         "game/nui.lua",
         "html (replace the old folder)",
         "locales/en.lua",
         "locales/tr.lua",
         "server/checkout.lua",
+        "server/server.lua",
         "shared/config/config.lua (the Intro setting was removed)",
-        "shared/config/legacy.lua"
+        "shared/config/legacy.lua",
+        "shared/peds.lua"
       ],
       "changes": [
         {
           "type": "add",
           "text": "Favorites: press the star on clothes, accessories, hairstyles, brows, beards, chest hair, makeup and tattoos to keep them, then find them all in the new Favorites tab"
+        },
+        {
+          "type": "add",
+          "text": "New /pedmenu command: players pick a ped from the server's ped list, seeing only the peds their job, gang or permission allows; switching to an allowed ped is free"
         },
         {
           "type": "add",
@@ -49,6 +55,14 @@
         {
           "type": "change",
           "text": "Longer notifications now stay on screen longer so they can be read"
+        },
+        {
+          "type": "add",
+          "text": "shared/peds.lua now explains how to add peds and limit them to jobs, gangs, permissions or single characters, with examples"
+        },
+        {
+          "type": "remove",
+          "text": "The Intro on/off setting was removed; the intro now always plays when a new character is created"
         }
       ]
     },
