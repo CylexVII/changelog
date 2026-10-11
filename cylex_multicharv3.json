@@ -2,6 +2,45 @@
   "package": "Cylex Multicharacter V3",
   "entries": [
     {
+      "version": "1.31",
+      "date": "2026-10-11",
+      "files": [
+        "client",
+        "server",
+        "fxmanifest.lua"
+      ],
+      "changes": [
+        {
+          "type": "fix",
+          "text": "ESX: Fixed characters sometimes not being saved after spawning, including when an external spawn selector is used."
+        },
+        {
+          "type": "fix",
+          "text": "Fixed a game crash when a scene or partner used a non-ped model."
+        },
+        {
+          "type": "fix",
+          "text": "Fixed the character preview sometimes failing to appear or spawning the wrong ped when switching characters quickly."
+        },
+        {
+          "type": "fix",
+          "text": "ESX: Loadout and death state are now restored correctly after selecting a character."
+        },
+        {
+          "type": "fix",
+          "text": "rcore_clothing skin reload now only runs on ESX."
+        },
+        {
+          "type": "add",
+          "text": "ESX: A console warning is now shown if Config.Multichar is disabled in es_extended."
+        },
+        {
+          "type": "add",
+          "text": "The version check now lists what changed in each version you are missing."
+        }
+      ]
+    },
+    {
       "version": "1.3",
       "date": "2026-08-28",
       "title": "Photo Mode update",
