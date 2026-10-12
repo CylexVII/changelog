@@ -2,6 +2,63 @@
   "package": "Cylex Apex Clothing",
   "entries": [
     {
+      "version": "1.0.4",
+      "date": "2026-10-12",
+      "title": "Share outfits with a nearby player or with a code",
+      "files": [
+        "client/creator.lua",
+        "client/share.lua (new)",
+        "core/server.lua",
+        "fxmanifest.lua",
+        "game/nui.lua",
+        "html (replace the old folder)",
+        "locales/en.lua",
+        "locales/tr.lua",
+        "server/database/schema.lua",
+        "server/server.lua",
+        "server/share.lua (new)",
+        "shared/config/config.lua (Config.ClothingShare added, Config.Branding removed)"
+      ],
+      "changes": [
+        {
+          "type": "add",
+          "text": "Share an outfit with a player standing next to you: choose it, pick the player and the name they will see; they get an Accept / Decline prompt and it lands in their saved outfits"
+        },
+        {
+          "type": "add",
+          "text": "One Share popup for everything: send to a nearby player or copy a code, for the outfit you are wearing or any saved outfit; open it with X or the new card at the top of Outfits"
+        },
+        {
+          "type": "change",
+          "text": "Share codes now start with CYLEX- (older CYX- codes still work), and the same outfit always gives the same code"
+        },
+        {
+          "type": "add",
+          "text": "New Settings option to stop receiving outfit offers"
+        },
+        {
+          "type": "add",
+          "text": "Config.ClothingShare: turn sharing on or off, set the distance, the time to answer and the cooldown, and choose whether the receiver pays for the pieces (off by default)"
+        },
+        {
+          "type": "add",
+          "text": "The icon buttons in Saved outfits now explain themselves when you hover them"
+        },
+        {
+          "type": "change",
+          "text": "The Export button is now called Share"
+        },
+        {
+          "type": "fix",
+          "text": "The Pose / Light menus no longer jump to the left right after opening"
+        },
+        {
+          "type": "remove",
+          "text": "Config.Branding was removed; the confirm button stripes and the etched X are always shown"
+        }
+      ]
+    },
+    {
       "version": "1.0.3",
       "date": "2026-10-09",
       "title": "Favorites, and a clear answer when the skin tone does not change",
