@@ -2,6 +2,54 @@
   "package": "Cylex MDT",
   "entries": [
     {
+      "version": "1.21",
+      "date": "2026-10-13",
+      "title": "Fine invoices from incidents, website page and clustered camera map",
+      "files": [
+        "client",
+        "server",
+        "html (replace the old folder, and delete leaflet.js and leaflet.css)",
+        "editable/framework (new billing and housing adapters)",
+        "editable/locales",
+        "editable/config.lua (new Config.Billing and Config.WebPage sections)",
+        "fxmanifest.lua"
+      ],
+      "changes": [
+        {
+          "type": "add",
+          "text": "Fine invoices: a new Send button next to Add Charges on each suspect of an incident bills the suspect's saved fine through okokBilling, esx_billing, qb-phone or cylex_phone (or a custom script). One invoice per suspect per incident, with a confirmation first; the report is saved automatically if needed. Who may send is set per rank on the Permissions page"
+        },
+        {
+          "type": "add",
+          "text": "New Website page: show your own site, rulebook, wiki or a Google Doc/Sheet inside the tablet. Set the address in Config.WebPage; leave it empty to hide the page"
+        },
+        {
+          "type": "add",
+          "text": "cylex_apex_housing is now supported for property lookups on citizen profiles"
+        },
+        {
+          "type": "perf",
+          "text": "The Cameras map groups nearby cameras into numbered bubbles, so it opens quickly and no longer lags on servers with hundreds of cameras. Bubbles turn gold when they hold a pinned camera, and picking a camera from the list opens the bubble around it"
+        },
+        {
+          "type": "fix",
+          "text": "The MDT no longer loses its language and settings (everything showing in English with raw text like sidebar.analytics) when a camera entry has no coordinates; the broken entry is skipped and named in the server console"
+        },
+        {
+          "type": "fix",
+          "text": "The chat tables are now created correctly on databases that already use the same constraint name, which used to stop the chat from working"
+        },
+        {
+          "type": "fix",
+          "text": "Printed documents no longer tell the officer they were printed when the item never reached the inventory; a clear error is shown instead"
+        },
+        {
+          "type": "change",
+          "text": "Live map and camera map now share one lighter map library, which makes the MDT load faster"
+        }
+      ]
+    },
+    {
       "version": "1.2",
       "date": "2026-10-07",
       "title": "lb-tablet migration, licence points and safer evidence handling",
