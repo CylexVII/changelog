@@ -2,6 +2,28 @@
   "package": "Cylex Apex Housing",
   "entries": [
     {
+      "version": "2.01",
+      "date": "2026-10-13",
+      "files": [
+        "client/doors.lua",
+        "server/properties.lua"
+      ],
+      "changes": [
+        {
+          "type": "fix",
+          "text": "MLO door locks now apply correctly for the player who created the property. Doors no longer stay unlocked (walkable and shown as unlocked) after a lock or an ownership change until you leave and re-enter the zone"
+        },
+        {
+          "type": "fix",
+          "text": "Apartment complexes that have no units yet now appear in the /housing management list and can be deleted. Previously the terminal NPC stayed in the world with no way to remove it"
+        },
+        {
+          "type": "fix",
+          "text": "Quickly locking and unlocking an MLO door can no longer leave it in the wrong state"
+        }
+      ]
+    },
+    {
       "version": "2.0",
       "date": "2026-10-07",
       "title": "Redesigned interface, Discord logging and resource rename",
