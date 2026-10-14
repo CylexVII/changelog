@@ -2,6 +2,52 @@
   "package": "Cylex Apex Clothing",
   "entries": [
     {
+      "version": "1.0.5",
+      "date": "2026-10-14",
+      "title": "Choose where your first character is created, and Outfits for new characters",
+      "files": [
+        "client/client.lua",
+        "fxmanifest.lua",
+        "game/camera.lua",
+        "html (replace the old folder)",
+        "locales/en.lua",
+        "locales/tr.lua",
+        "server/checkout.lua",
+        "shared/config/config.lua (Locations.Creator is now a Creators list, Sections.Outfits added)",
+        "shared/config/legacy.lua"
+      ],
+      "changes": [
+        {
+          "type": "add",
+          "text": "After the intro, new players choose where their character is created: a black studio or a daylight place. The character is moved there behind a short fade so they see themselves in it, and the same choice is in Settings"
+        },
+        {
+          "type": "add",
+          "text": "The Outfits page is now in the first character creator too: ready outfits, import by code and saved outfits, free like the rest of character creation. Config.NewCharacter.Sections.Outfits = false hides it again"
+        },
+        {
+          "type": "add",
+          "text": "Config.NewCharacter.Locations.Creators is a list of places (id, label, coordinates); add your own, or keep one place to skip the choice. A config with the old single Creator spot keeps working"
+        },
+        {
+          "type": "fix",
+          "text": "The character no longer drops in when moved to a creator place; it is put on the floor while the screen is still black"
+        },
+        {
+          "type": "fix",
+          "text": "The hair colour panel no longer slides under the total cost card: the Fade row is visible again"
+        },
+        {
+          "type": "change",
+          "text": "The Settings panel is about 17 % shorter and scrolls when it has more rows than fit"
+        },
+        {
+          "type": "change",
+          "text": "The Head category has a clearer cap icon"
+        }
+      ]
+    },
+    {
       "version": "1.0.4",
       "date": "2026-10-12",
       "title": "Share outfits with a nearby player or with a code",
