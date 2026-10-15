@@ -2,6 +2,92 @@
   "package": "Cylex Apex Clothing",
   "entries": [
     {
+      "version": "1.0.6",
+      "date": "2026-10-15",
+      "title": "Photo setup: every clothing photo in four guided steps",
+      "files": [
+        "client/greenscreener.js",
+        "client/photos.lua",
+        "server/photobatch.lua",
+        "server/photos.lua",
+        "server/photostore.lua",
+        "server/checkout.lua",
+        "game/util.lua",
+        "html (replace the old folder)",
+        "locales/en.lua",
+        "locales/tr.lua",
+        "shared/config/config.lua (Photos.Batch.EstimatePerMin added)",
+        "photos-config.json (appearanceCapture.hairNeutralFaceMale added)",
+        "fxmanifest.lua"
+      ],
+      "changes": [
+        {
+          "type": "add",
+          "text": "/clothingphotos now opens on a photo setup that walks you through every photo: count the clothes, men's items, women's items, then their colours. Each step starts with one button, and its place is kept on the server, so quitting, a crash or a server restart never loses it. The old capture tabs are under Advanced"
+        },
+        {
+          "type": "add",
+          "text": "Each setup step is shot alone or split between players you add by ID, with the time it takes for 1 to 4 players (from the speed measured on your server)"
+        },
+        {
+          "type": "add",
+          "text": "Items that change nothing on the character (blank slots in clothing packs) are stored as empty instead of failed, so a step reaches 100 %. Anything left is listed by number with a \"These are empty\" button"
+        },
+        {
+          "type": "add",
+          "text": "When a player's game hits its loading limit (after about 3 000 - 4 000 photos) a card stays on screen telling them to quit and join again; the capture then continues where it left off by itself"
+        },
+        {
+          "type": "add",
+          "text": "The last 5 photos show at the bottom of the screen while capturing, exactly as they are stored, so a wrong crop or a false empty is seen at once"
+        },
+        {
+          "type": "add",
+          "text": "Reset in the photo setup: pick what to delete (Fivemanage photos and their records, the server photo storage, empty marks, setup marks, the photos players downloaded). Fivemanage files are deleted in the background without hitting its rate limit"
+        },
+        {
+          "type": "add",
+          "text": "The setup counts the clothes by itself when a pack was added or removed, and warns when a pack changed the item order in the middle (stored photos would show other items) with a button to shoot that category again"
+        },
+        {
+          "type": "add",
+          "text": "When a team capture finishes, the photo panel opens again for whoever started it"
+        },
+        {
+          "type": "fix",
+          "text": "Faces no longer change from one category to the next (a nose looked different in beard and eyebrow photos after eye colours): every category starts on a fresh character, and men's hair photos use the same face as beards and eyebrows"
+        },
+        {
+          "type": "fix",
+          "text": "After a reconnect the capture no longer starts on the character select screen of multicharacter servers; it waits until a character is loaded"
+        },
+        {
+          "type": "fix",
+          "text": "An item that never loads no longer makes the same player reconnect forever: after stopping the game twice it is skipped and listed"
+        },
+        {
+          "type": "fix",
+          "text": "A team capture pauses with the error when photos cannot be saved (API key, quota, full disk) instead of failing for hours"
+        },
+        {
+          "type": "fix",
+          "text": "The player taking photos can no longer die during a capture, a capture waits while the player is dead or in a vehicle, and the photo panel no longer stays open over your own capture"
+        },
+        {
+          "type": "fix",
+          "text": "Mother 23 (Benjamin) shows as Mother 22 while cylex_apex_clothing_studio runs, as its face breaks there"
+        },
+        {
+          "type": "change",
+          "text": "The setup steps need cylex_apex_clothing_studio: add ensure cylex_apex_clothing_studio to server.cfg and restart the server (starting it from the console does not work). The old invisible-head check that stopped every capture is gone"
+        },
+        {
+          "type": "change",
+          "text": "Setup progress counts every item one by one, so old photos of removed items can no longer hide missing ones"
+        }
+      ]
+    },
+    {
       "version": "1.0.5",
       "date": "2026-10-14",
       "title": "Choose where your first character is created, and Outfits for new characters",
