@@ -6,18 +6,26 @@
       "date": "2026-10-15",
       "title": "Photo setup: every clothing photo in four guided steps",
       "files": [
+        "client/client.lua",
+        "client/creator.lua",
         "client/greenscreener.js",
         "client/photos.lua",
-        "server/photobatch.lua",
-        "server/photos.lua",
-        "server/photostore.lua",
-        "server/checkout.lua",
+        "core/server.lua",
         "game/util.lua",
         "html (replace the old folder)",
         "locales/en.lua",
         "locales/tr.lua",
-        "shared/config/config.lua (Photos.Batch.EstimatePerMin added)",
         "photos-config.json (appearanceCapture.hairNeutralFaceMale added)",
+        "server/checkout.lua",
+        "server/database/playeroutfits.lua",
+        "server/database/schema.lua",
+        "server/photobatch.lua",
+        "server/photos.lua",
+        "server/photostore.lua",
+        "server/server.lua",
+        "server/share.lua",
+        "shared/config/config.lua (Photos.Batch.EstimatePerMin added)",
+        "shared/pricing.lua",
         "fxmanifest.lua"
       ],
       "changes": [
@@ -76,6 +84,18 @@
         {
           "type": "fix",
           "text": "Mother 23 (Benjamin) shows as Mother 22 while cylex_apex_clothing_studio runs, as its face breaks there"
+        },
+        {
+          "type": "fix",
+          "text": "Saving an outfit saves only the clothes: hair and face stay as saved, so a temporary hairstyle is no longer made permanent"
+        },
+        {
+          "type": "fix",
+          "text": "While /migrateskins qb-clothing runs, only the admin running it can send the converted skins (another client could overwrite a player's skin before)"
+        },
+        {
+          "type": "change",
+          "text": "Outfits you got from someone else (share code or invite) or saved before buying their pieces are paid once, the first time you wear them; outfits whose pieces you already own stay free. Existing outfits count as paid (player_outfits gets a purchase column by itself)"
         },
         {
           "type": "change",
