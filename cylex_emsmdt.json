@@ -1,0 +1,46 @@
+{
+  "package": "Cylex EMS MDT",
+  "entries": [
+    {
+      "version": "1.1",
+      "date": "2026-10-15",
+      "title": "Own key binding next to Cylex MDT and phone numbers for offline citizens",
+      "files": [
+        "editable/client_open.lua",
+        "editable/config.lua (new Config.OpenKeyCommand and Config.OpenKeyLabel)",
+        "editable/framework/phone/cylex_phone.lua",
+        "fxmanifest.lua"
+      ],
+      "changes": [
+        {
+          "type": "fix",
+          "text": "Running the EMS MDT together with Cylex MDT (police) no longer breaks the open key: each tablet now has its own entry in Settings → Key Bindings → FiveM, so doctors pressing the key open the EMS MDT instead of getting \"no permission\" from the police tablet"
+        },
+        {
+          "type": "fix",
+          "text": "cylex_phone: citizens who are offline now show their phone number too, and the MDT no longer waits forever when cylex_phone is slow to start or missing"
+        },
+        {
+          "type": "add",
+          "text": "New Config.OpenKeyCommand and Config.OpenKeyLabel set the name and label of the open key in the FiveM key bindings menu"
+        },
+        {
+          "type": "change",
+          "text": "When both MDTs use the same key, pressing it on the wrong job now does nothing instead of showing \"no permission\""
+        },
+        {
+          "type": "fix",
+          "text": "The uniform popup cursor key has its own binding and only reacts while the EMS uniform popup is open"
+        },
+        {
+          "type": "change",
+          "text": "The key bindings were renamed, so players who had changed the open or popup cursor key need to set it again once"
+        },
+        {
+          "type": "change",
+          "text": "Default language in config.lua is now English (Config.Locale = 'en')"
+        }
+      ]
+    }
+  ]
+}
