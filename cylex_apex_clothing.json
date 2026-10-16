@@ -2,6 +2,51 @@
   "package": "Cylex Apex Clothing",
   "entries": [
     {
+      "version": "1.0.7",
+      "date": "2026-10-16",
+      "title": "Server performance and security",
+      "files": [
+        "client/share.lua",
+        "fxmanifest.lua",
+        "html (replace the old folder)",
+        "lib (new folder)",
+        "server/checkout.lua",
+        "server/server.lua",
+        "server/share.lua",
+        "shared/config/config.lua (UI.GlassBlur default 4 -> 2)"
+      ],
+      "changes": [
+        {
+          "type": "fix",
+          "text": "Opening \"Send to player\" in outfit sharing no longer freezes the server for up to ~120 ms on busy servers: nearby players are found on the player's own PC, the server only checks the few in range"
+        },
+        {
+          "type": "fix",
+          "text": "Players can no longer use the clothing script's events to hide in a world of their own or to pull themselves out of another script's (housing, jail, events). Only the first character creation and the photo capture move a player into their own world, and only out of that one back"
+        },
+        {
+          "type": "perf",
+          "text": "The creator's glass blur costs far less FPS: one blur for the whole menu at about 30 fps, only behind the panels, at a lower resolution"
+        },
+        {
+          "type": "fix",
+          "text": "Importing an outfit code no longer hides the player's other saved outfits until the next restart"
+        },
+        {
+          "type": "change",
+          "text": "Config.UI.GlassBlur default is now 2 (Light 2, Strong 4). A config that still says 4 gets a stronger blur than before"
+        },
+        {
+          "type": "change",
+          "text": "ox_lib is no longer loaded into the script; the parts it used are built in. Resource monitors now show the script's own time instead of splitting it with ox_lib. ox_lib is still used for its notifications, menus, text UI and radial menu when your settings pick them"
+        },
+        {
+          "type": "perf",
+          "text": "Saved outfit lists are freed from the server's memory when a player leaves or switches character"
+        }
+      ]
+    },
+    {
       "version": "1.0.6",
       "date": "2026-10-15",
       "title": "Photo setup: every clothing photo in four guided steps",
