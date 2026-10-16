@@ -1,0 +1,72 @@
+{
+  "package": "Cylex Apex Garage",
+  "entries": [
+    {
+      "version": "1.01",
+      "date": "2026-10-17",
+      "title": "First release",
+      "changes": [
+        {
+          "type": "add",
+          "text": "Classic and real parking garages in one script, mode chosen per garage; car, air and sea garages with public, job, gang, private and property access"
+        },
+        {
+          "type": "add",
+          "text": "Impound with a police form, preset and custom fines, hold times, release fees, disputes, auto-tow and abandoned vehicle cleanup"
+        },
+        {
+          "type": "add",
+          "text": "In-game admin panel for garages, interiors, impound lots, vehicle lists and player vehicles, with freecam placement and JSON export / import"
+        },
+        {
+          "type": "add",
+          "text": "Vehicle photo studio: /garagephotos takes transparent vehicle pictures in game, and garage cards show each car in its owner's paint colour"
+        },
+        {
+          "type": "add",
+          "text": "Garage menu with search, sort, filters, favourites, nicknames and GPS; bring vehicles from other garages and return lost ones for a fee"
+        },
+        {
+          "type": "add",
+          "text": "Fuel, engine, body, props and damage (doors, windows, tyres, deformation) are saved and restored"
+        },
+        {
+          "type": "add",
+          "text": "Real parking: vehicles stay in their slots near the player, optional tarps, drive straight out of the slot"
+        },
+        {
+          "type": "add",
+          "text": "Job and gang vehicles with minimum grade, purchase lists paid by the player or the group account, livery and extras on take out"
+        },
+        {
+          "type": "add",
+          "text": "Transfer between garages, give to a nearby player, key sharing with permissions and duration, sell to the dealer or a player"
+        },
+        {
+          "type": "add",
+          "text": "Private garages for sale or rent, and interior garages with cinematic entry, slots and multiple exits"
+        },
+        {
+          "type": "add",
+          "text": "Trailers are stored and restored with their vehicle; optional insurance with offices and durations"
+        },
+        {
+          "type": "add",
+          "text": "/garageimport takes over garages from jg-advancedgarages, tgiann-realparking, qb-garages / qbx_garages and esx garages, with a preview"
+        },
+        {
+          "type": "add",
+          "text": "Works as a drop-in for scripts that call qb-garages, jg-advancedgarages or tgiann-realparking"
+        },
+        {
+          "type": "add",
+          "text": "Auto detected fuel, keys, notify, banking, housing, phone, target, text UI and radial scripts"
+        },
+        {
+          "type": "add",
+          "text": "Discord webhooks for every action, English and Turkish languages"
+        }
+      ]
+    }
+  ]
+}

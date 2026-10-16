@@ -53,6 +53,10 @@
       "name": "Cylex Apex Clothing"
     },
     {
+      "key": "cylex_apex_garage",
+      "name": "Cylex Apex Garage"
+    },
+    {
       "key": "cylex_ui",
       "name": "Cylex UI"
     }
