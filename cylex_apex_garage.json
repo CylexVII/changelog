@@ -2,6 +2,54 @@
   "package": "Cylex Apex Garage",
   "entries": [
     {
+      "version": "1.02",
+      "date": "2026-10-21",
+      "title": "Admin control over key re-sharing, shared vehicle exports and lower client usage",
+      "files": [
+        "bridge",
+        "client",
+        "html (replace the old folder)",
+        "locales",
+        "server",
+        "shared",
+        "fxmanifest.lua"
+      ],
+      "changes": [
+        {
+          "type": "add",
+          "text": "Admin setting \"Key holders can share with others\" (General rules > Key sharing), off by default: players who received a key can no longer pass it on unless an admin turns it on"
+        },
+        {
+          "type": "add",
+          "text": "Server exports IsVehicleShared(plate, identifier?) and GetVehicleShares(plate), so other scripts (tax, insurance) can check whether a vehicle's key is shared"
+        },
+        {
+          "type": "perf",
+          "text": "Much lower client usage away from garages: prompts, markers and parking bays only run when a garage is actually in reach, no longer whenever any garage is within 150 m"
+        },
+        {
+          "type": "perf",
+          "text": "Lower client usage while driving: only the garages around your vehicle are checked for parking bays, not every garage on the map"
+        },
+        {
+          "type": "perf",
+          "text": "Real parking uses less client time near parking lots: prompts only look at the slots next to you and parked copies are checked less often"
+        },
+        {
+          "type": "perf",
+          "text": "Prompt, drawing and key loops wake up less often while nothing is shown"
+        },
+        {
+          "type": "fix",
+          "text": "With debug on, restarting another resource no longer prints the chosen notify / fuel / keys scripts again"
+        },
+        {
+          "type": "change",
+          "text": "Keys shared earlier with the \"share with others\" permission lose that permission while the new setting is off"
+        }
+      ]
+    },
+    {
       "version": "1.01",
       "date": "2026-10-17",
       "title": "First release",
