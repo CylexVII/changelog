@@ -2,6 +2,65 @@
   "package": "Cylex Apex Clothing",
   "entries": [
     {
+      "version": "1.0.8",
+      "date": "2026-10-22",
+      "title": "Switch from your old clothing script without losing a look",
+      "files": [
+        "fxmanifest.lua",
+        "client/blips.lua",
+        "client/management/management.lua",
+        "core/client.lua",
+        "core/server.lua",
+        "game/customization.lua",
+        "game/nui.lua",
+        "game/util.lua",
+        "locales/en.lua",
+        "locales/tr.lua",
+        "server/checkout.lua",
+        "server/server.lua",
+        "server/share.lua",
+        "server/database/schema.lua",
+        "server/database/migrate.lua (new)",
+        "server/database/migrateconvert.lua (new)",
+        "shared/compat.lua",
+        "shared/config/config.lua (new Config.AutoMigrate)"
+      ],
+      "changes": [
+        {
+          "type": "add",
+          "text": "Players keep their looks and saved outfits when you switch: on its first start the script finds your old clothing script's data and moves it over once, with no command to run. Supported: qb-clothing, esx_skin / skinchanger, fivem-appearance, Quasar Appearance, bl_appearance, juddlie_appearance and rcore_clothing. Existing looks are never overwritten and every changed table is backed up first"
+        },
+        {
+          "type": "fix",
+          "text": "The menu no longer stays closed (\"is not iterable\" in the F8 console) for players whose saved look or outfits came from Skeleton Appearance (sn_appearance)"
+        },
+        {
+          "type": "fix",
+          "text": "ESX job scripts get the right men's or women's uniform again"
+        },
+        {
+          "type": "add",
+          "text": "rcore_clothing: looks and saved outfits move over with the exact clothing items, including add-on packs, read from rcore's own item list on your server"
+        },
+        {
+          "type": "add",
+          "text": "Config.AutoMigrate = false turns the automatic move off. /migrateskins [script|all] [dry] runs it again by hand; dry only counts what would move"
+        },
+        {
+          "type": "fix",
+          "text": "Uniforms from other scripts in the old skinchanger format change only the clothes; the character's face stays as it is"
+        },
+        {
+          "type": "fix",
+          "text": "Scripts written for illenium-appearance that open the menu with only a few settings now open it with every category"
+        },
+        {
+          "type": "fix",
+          "text": "Boss menu outfits work on Qbox with qbx_management"
+        }
+      ]
+    },
+    {
       "version": "1.0.7",
       "date": "2026-10-16",
       "title": "Server performance and security",
