@@ -1,0 +1,48 @@
+{
+  "package": "Cylex Apex Emotes",
+  "entries": [
+    {
+      "version": "1.0.0",
+      "date": "2026-10-22",
+      "title": "First release: the rebuilt Cylex emote menu, successor of Animation Menu v2",
+      "changes": [
+        {
+          "type": "add",
+          "text": "A new emote menu built from scratch: over 6,000 emotes with animated previews that load smoothly as you scroll, search, favourites, recently used and categories"
+        },
+        {
+          "type": "add",
+          "text": "Drop-in replacement for Animation Menu v2 and rpemotes: your existing animation lists, custom emotes and other scripts' exports and events keep working"
+        },
+        {
+          "type": "add",
+          "text": "Quick slots: drag an emote onto a slot and play it with one key (Alt, Shift or Ctrl + 1-8, chosen by the player or forced by the server)"
+        },
+        {
+          "type": "add",
+          "text": "Shared emotes with a right click: invite the closest player directly or pick from a nearby list, checked by the server"
+        },
+        {
+          "type": "add",
+          "text": "Player settings: accent colour with a custom colour picker, click to play, sounds, cancel on move, playback speed, remember the last tab"
+        },
+        {
+          "type": "add",
+          "text": "Sit anywhere, walk and expression styles that stay after reconnecting or changing clothes"
+        },
+        {
+          "type": "add",
+          "text": "Built-in notifications and text prompts, or switch to your own notify script from one config file"
+        },
+        {
+          "type": "add",
+          "text": "Emotes no longer break when you open a door or bump into someone, and props are cleaned up when you cancel"
+        },
+        {
+          "type": "add",
+          "text": "Server owners can lock categories by permission, change the menu logo and edit everything from the editable folder"
+        }
+      ]
+    }
+  ]
+}
