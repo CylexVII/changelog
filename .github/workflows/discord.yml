@@ -1,0 +1,58 @@
+# Changelog JSON -> Discord "updates" forum (one post per script, one message per version).
+# New versions are posted, a version pushed again with changes edits its message.
+# Needs the repo secret DISCORD_WEBHOOK (webhook of the forum channel).
+name: Discord updates
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "*.json"
+      - "!index.json"
+      - "!discord-state.json"
+  workflow_dispatch:
+    inputs:
+      resources:
+        description: "Scripts to sync, space separated (empty = every script: posts all old changelogs once)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: discord-updates
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Sync with Discord
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          RESOURCES: ${{ github.event.inputs.resources }}
+          BEFORE: ${{ github.event.before }}
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            python3 .github/scripts/discord_changelog.py sync $RESOURCES
+          else
+            python3 .github/scripts/discord_changelog.py push "$BEFORE" "${{ github.sha }}"
+          fi
+
+      # also after a failure: what was already posted must be remembered
+      - name: Save message ids
+        if: always()
+        run: |
+          if [ -n "$(git status --porcelain discord-state.json)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+            git add discord-state.json
+            git commit -m "discord: message ids"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
