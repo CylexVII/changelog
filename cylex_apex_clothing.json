@@ -2,6 +2,43 @@
   "package": "Cylex Apex Clothing",
   "entries": [
     {
+      "version": "1.0.9",
+      "date": "2026-10-24",
+      "title": "Take clothes off for a look, and pick up where you left off",
+      "files": [
+        "fxmanifest.lua",
+        "client/creator.lua",
+        "game/customization.lua",
+        "game/nui.lua",
+        "html (replace the old folder)",
+        "locales/en.lua",
+        "locales/tr.lua",
+        "shared/config/clothes.lua (new Config.Undress.Menu and Config.Undress.Groups)"
+      ],
+      "changes": [
+        {
+          "type": "add",
+          "text": "New Clothes menu on the bar under the character: untick Top, Legs, Shoes or Accessories to take them off and see your character without them, or use Take all off / Put all on. It is a preview only: nothing is bought or saved, and everything goes back on when the menu closes"
+        },
+        {
+          "type": "add",
+          "text": "Press U to take clothes off and put them back on; it works with the panels hidden (H) too"
+        },
+        {
+          "type": "change",
+          "text": "The menu now remembers where you were: going back to a tab opens the category you left, a category opens the section you left (e.g. Upper body › Chains), and the item grid comes back at the same scroll position with your search still in it"
+        },
+        {
+          "type": "add",
+          "text": "Picking an item from a group you took off puts that group back on, so you always see what you picked"
+        },
+        {
+          "type": "add",
+          "text": "Server owners can set the bare and shorts pieces of each group, remove groups, or turn the menu off (Config.Undress.Menu and Config.Undress.Groups)"
+        }
+      ]
+    },
+    {
       "version": "1.0.8",
       "date": "2026-10-22",
       "title": "Switch from your old clothing script without losing a look",
