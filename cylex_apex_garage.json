@@ -2,6 +2,99 @@
   "package": "Cylex Apex Garage",
   "entries": [
     {
+      "version": "1.04",
+      "date": "2026-10-24",
+      "title": "Send player vehicles to impound from the panel, searchable lists for big servers",
+      "files": [
+        "client",
+        "html (replace the old folder)",
+        "locales",
+        "server",
+        "fxmanifest.lua"
+      ],
+      "changes": [
+        {
+          "type": "add",
+          "text": "Admin panel > Player vehicles: send a player's vehicle to any impound lot (opens a case without a fine, the owner is notified)"
+        },
+        {
+          "type": "fix",
+          "text": "Players who quit inside an interior garage are put back at the entrance again on servers with a character menu or spawn selector"
+        },
+        {
+          "type": "add",
+          "text": "Every long dropdown (garage pickers with hundreds of garages) has a search field"
+        },
+        {
+          "type": "add",
+          "text": "Garage list: one \"Show\" dropdown with counts (Public, Job, Gang, Private / property, Impound, Disabled, Needs setup) and groups that fold with a click"
+        },
+        {
+          "type": "add",
+          "text": "Player vehicles: change the fine, extend the hold or release an impounded vehicle for free"
+        },
+        {
+          "type": "add",
+          "text": "Player vehicles: mark a vehicle that is out in the world on the map or teleport next to it"
+        },
+        {
+          "type": "add",
+          "text": "Player vehicles: \"All vehicles of the owner\" lists every vehicle of that player"
+        },
+        {
+          "type": "add",
+          "text": "Garages that use a job vehicle list or an interior open on click; \"+N\" shows the rest"
+        },
+        {
+          "type": "change",
+          "text": "Player vehicles show the vehicle's name and make instead of the model hash"
+        },
+        {
+          "type": "change",
+          "text": "The garage list search also finds garages by job or gang name, and group headers show the job's label"
+        },
+        {
+          "type": "change",
+          "text": "The \"move to\" list shows garages and impound lots under separate headers, each row tagged Garage or Impound"
+        },
+        {
+          "type": "fix",
+          "text": "Saving or discarding on the Impound lots tab no longer saves or throws away unsaved changes from Global rules"
+        }
+      ]
+    },
+    {
+      "version": "1.03",
+      "date": "2026-10-22",
+      "title": "Vehicle types checked everywhere, job vehicles from moved databases",
+      "changes": [
+        {
+          "type": "fix",
+          "text": "Air and sea garages and impound lots no longer list or hand out cars (and car garages no longer list helicopters) when the server did not know a vehicle's type yet, e.g. after a restart or with vehicles from an older garage script"
+        },
+        {
+          "type": "fix",
+          "text": "Taking out, moving between garages, recovering lost vehicles, interior garages and impound release now check the vehicle type on the server too"
+        },
+        {
+          "type": "fix",
+          "text": "An impounded vehicle is released at a lot of its own type, also when an older import put it on a lot of another type"
+        },
+        {
+          "type": "fix",
+          "text": "Job vehicles of a vehicle table that never went through the import (database moved from a test server) are tagged from the old job column once on start, so job garages take them again"
+        },
+        {
+          "type": "fix",
+          "text": "A garage's key can no longer be changed while vehicles or open impound cases use it"
+        },
+        {
+          "type": "perf",
+          "text": "The start-up import check reads the vehicle table once instead of once per old garage script"
+        }
+      ]
+    },
+    {
       "version": "1.02",
       "date": "2026-10-21",
       "title": "Admin control over key re-sharing, shared vehicle exports and lower client usage",
