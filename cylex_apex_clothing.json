@@ -2,18 +2,27 @@
   "package": "Cylex Apex Clothing",
   "entries": [
     {
-      "version": "1.0.9",
+      "version": "1.0.10",
       "date": "2026-10-24",
       "title": "Take clothes off for a look, and pick up where you left off",
       "files": [
         "fxmanifest.lua",
+        "client/client.lua",
         "client/creator.lua",
         "game/customization.lua",
         "game/nui.lua",
+        "game/util.lua",
         "html (replace the old folder)",
+        "lib/server.lua",
         "locales/en.lua",
         "locales/tr.lua",
-        "shared/config/clothes.lua (new Config.Undress.Menu and Config.Undress.Groups)"
+        "server/checkout.lua",
+        "server/database/migrateconvert.lua",
+        "server/database/playeroutfitcodes.lua",
+        "server/server.lua",
+        "shared/config/clothes.lua (new Config.Undress.Menu and Config.Undress.Groups)",
+        "shared/config/config.lua (new NewCharacter.Intro and ClothingShare.CodePrefix)",
+        "cylex_apex_clothing_studio/stream (2 head files replaced)"
       ],
       "changes": [
         {
@@ -35,6 +44,26 @@
         {
           "type": "add",
           "text": "Server owners can set the bare and shorts pieces of each group, remove groups, or turn the menu off (Config.Undress.Menu and Config.Undress.Groups)"
+        },
+        {
+          "type": "add",
+          "text": "Choose how outfit share codes start (Config.ClothingShare.CodePrefix, CYLEX by default, e.g. MYCITY-7Q2F-81K). Codes made before the change keep working and are shown with the new start"
+        },
+        {
+          "type": "add",
+          "text": "The short intro before the first character creator can be turned off (Config.NewCharacter.Intro = false): the creator then opens straight away"
+        },
+        {
+          "type": "fix",
+          "text": "Faces no longer look broken while cylex_apex_clothing_studio is started"
+        },
+        {
+          "type": "fix",
+          "text": "When a purchase is refused, the server console now says why (for example UI files that do not match the install, or no loaded character for the player)"
+        },
+        {
+          "type": "fix",
+          "text": "Looks and outfits moved over from rcore_clothing now show the right clothing items on servers whose clothing packs are in a different order"
         }
       ]
     },
