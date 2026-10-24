@@ -16,6 +16,10 @@ on:
         description: "Scripts to sync, space separated (empty = every script: posts all old changelogs once)"
         required: false
         default: ""
+      repost:
+        description: "Post these scripts again in a new forum post (delete the old post on Discord first)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -36,10 +40,15 @@ jobs:
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
           RESOURCES: ${{ github.event.inputs.resources }}
+          REPOST: ${{ github.event.inputs.repost }}
           BEFORE: ${{ github.event.before }}
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            python3 .github/scripts/discord_changelog.py sync $RESOURCES
+            if [ "$REPOST" = "true" ]; then
+              python3 .github/scripts/discord_changelog.py sync --repost $RESOURCES
+            else
+              python3 .github/scripts/discord_changelog.py sync $RESOURCES
+            fi
           else
             python3 .github/scripts/discord_changelog.py push "$BEFORE" "${{ github.sha }}"
           fi

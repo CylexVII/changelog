@@ -13,6 +13,8 @@ message id plus a hash of the entry:
 Usage:
   discord_changelog.py push <before-sha> <after-sha>   sync the scripts whose JSON changed in a push
   discord_changelog.py sync [resource ...]             sync these scripts, or every script
+  discord_changelog.py sync --repost resource ...      post these scripts again in a new post (delete the
+                                                       old forum post by hand; a webhook can not delete it)
 Environment:
   DISCORD_WEBHOOK   webhook URL of the forum channel (repo secret)
   DRY_RUN=1         print what would be sent, send nothing, keep the state file
@@ -33,8 +35,10 @@ SKIP = {"index.json", "discord-state.json"}
 
 SITE = "https://cylexdev.com"
 BRAND = "Cylex Development"
-# Square logo for the author line / intro card; empty = none
-BRAND_ICON = ""
+# Name and picture of the sender. Empty = what the webhook has in Discord (channel settings >
+# Integrations > Webhooks), which is the easiest place to set them.
+BOT_NAME = "Cylex STORE"
+BOT_AVATAR = "https://raw.githubusercontent.com/CylexVII/changelog/main/logo.png"
 
 # Embed colour by the most important kind of change in the release
 COLOR_NEW = 0x00E5B0
@@ -106,13 +110,6 @@ def links(resource):
     return " · ".join(out)
 
 
-def author():
-    a = {"name": BRAND, "url": SITE}
-    if BRAND_ICON:
-        a["icon_url"] = BRAND_ICON
-    return a
-
-
 def iso_date(date):
     try:
         return datetime.datetime.strptime(date, "%Y-%m-%d").replace(hour=12).isoformat() + "Z"
@@ -171,7 +168,6 @@ def version_message(resource, name, entry, edited=False):
     fields.append({"name": "​", "value": links(resource), "inline": False})
 
     embed = {
-        "author": author(),
         "title": f"{name}  ·  v{entry['version']}",
         "url": f"{SITE}/changelog/{resource}",
         "description": "\n".join(desc) or None,
@@ -209,21 +205,20 @@ def intro_message(resource, name):
         links(resource),
     ]
     embed = {
-        "author": author(),
         "title": name,
         "url": f"{SITE}/package/{info['packageId']}" if info.get("packageId") else f"{SITE}/changelog/{resource}",
         "description": "\n".join(lines),
         "color": COLOR_INTRO,
         "footer": {"text": BRAND},
     }
-    if BRAND_ICON:
-        embed["thumbnail"] = {"url": BRAND_ICON}
+    if BOT_AVATAR:
+        embed["thumbnail"] = {"url": BOT_AVATAR}
     return {"embeds": [embed], "allowed_mentions": {"parse": []}}
 
 
 def size(embed):
     n = len(embed.get("title", "")) + len(embed.get("description", "") or "")
-    n += len(embed.get("footer", {}).get("text", "")) + len(embed.get("author", {}).get("name", ""))
+    n += len(embed.get("footer", {}).get("text", ""))
     for f in embed.get("fields", []):
         n += len(f["name"]) + len(f["value"])
     return n
@@ -237,6 +232,12 @@ class Gone(Exception):
 
 
 def request(method, url, payload):
+    if method == "POST":
+        payload = dict(payload)
+        if BOT_NAME:
+            payload["username"] = BOT_NAME
+        if BOT_AVATAR:
+            payload["avatar_url"] = BOT_AVATAR
     body = json.dumps(payload).encode("utf-8")
     for _ in range(8):
         req = urllib.request.Request(url, data=body, method=method,
@@ -362,9 +363,18 @@ def main():
             raise SystemExit(__doc__)
         resources = changed_files(sys.argv[2], sys.argv[3])
     else:
-        resources = sys.argv[2:] or all_resources()
+        args = sys.argv[2:]
+        repost = "--repost" in args
+        resources = [a for a in args if a != "--repost"]
+        if repost and not resources:
+            raise SystemExit("--repost needs the script names (it would post every script again)")
+        resources = resources or all_resources()
 
     state = load_json(STATE_FILE, {})
+    if sys.argv[1] == "sync" and repost:
+        for resource in resources:
+            state.pop(resource, None)
+            print(f"{resource}: forgotten, posting it again")
     discord = Discord(webhook or "https://discord.invalid/dry", dry)
     for resource in resources:
         sync(resource, state, discord)
