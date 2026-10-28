@@ -2,6 +2,32 @@
   "package": "Cylex Apex Garage",
   "entries": [
     {
+      "version": "1.05",
+      "date": "2026-10-28",
+      "title": "Job vehicles keep their tuning, mark the garage a vehicle is parked in",
+      "files": [
+        "client",
+        "html (replace the old folder)",
+        "locales",
+        "server",
+        "fxmanifest.lua"
+      ],
+      "changes": [
+        {
+          "type": "fix",
+          "text": "Job and gang vehicles keep their tuning: the look set in the job vehicle list (engine, paint, livery, extras) is applied only until the vehicle is stored for the first time, later upgrades are no longer reset on every take-out"
+        },
+        {
+          "type": "add",
+          "text": "Garage menu: when transfers are off, a vehicle parked in another garage shows a \"Mark garage\" button that sets a GPS waypoint to that garage"
+        },
+        {
+          "type": "fix",
+          "text": "Vehicle list editor: \"Take from my vehicle\" now picks up the turbo"
+        }
+      ]
+    },
+    {
       "version": "1.04",
       "date": "2026-10-24",
       "title": "Send player vehicles to impound from the panel, searchable lists for big servers",
