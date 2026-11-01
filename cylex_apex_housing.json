@@ -2,6 +2,84 @@
   "package": "Cylex Apex Housing",
   "entries": [
     {
+      "version": "2.1",
+      "date": "2026-11-02",
+      "title": "New building system for apartments and motels, plus decoration favorites",
+      "files": [
+        "cylex_apex_housing (replace the whole folder, then copy your config back)"
+      ],
+      "changes": [
+        {
+          "type": "add",
+          "text": "New building system for apartments and motels. It replaces the old apartment system: a building has floors and rooms, and rooms are created in batches from room types you set up once"
+        },
+        {
+          "type": "add",
+          "text": "Rooms are rented or sold per room type, with minimum and maximum rental days and a grace period. When a stay ends, stored items move to Lost Items, furniture is refunded minus a fee, and unpaid bills become a personal debt that must be paid before renting another room"
+        },
+        {
+          "type": "change",
+          "text": "Old apartment units are not converted. They can no longer be entered or previewed and their old stashes are not shown, so recreate them as a building"
+        },
+        {
+          "type": "add",
+          "text": "Two building modes: MLO buildings with real doors, and teleport buildings with IPL or shell rooms. Teleport buildings use either a door for each room or one single entrance through the intercom panel, chosen when the building is created"
+        },
+        {
+          "type": "add",
+          "text": "Free camera door editor for teleport buildings: place room doors floor by floor, copy a floor upwards and adjust the floor height with the arrow keys"
+        },
+        {
+          "type": "add",
+          "text": "MLO buildings: set up one room, then apply it to the other rooms as a template, with rotate and mirror"
+        },
+        {
+          "type": "add",
+          "text": "Intercom panel with a default reception NPC to list rooms, rent them and collect lost items. Elevators, room garages, doorbells and police raids also work in buildings"
+        },
+        {
+          "type": "add",
+          "text": "Decoration favorites: star any prop in the catalog and it appears in a Favorites tab next to All. Favorites are saved per character on the player's PC, and props removed from the config are no longer shown"
+        },
+        {
+          "type": "change",
+          "text": "A new building stays a draft in the panel and is only saved once its first rooms are created"
+        },
+        {
+          "type": "change",
+          "text": "ESC now hides the property creator instead of closing it, and /housing continues where you left off"
+        },
+        {
+          "type": "change",
+          "text": "The free camera for placing interior points in the property creator moves at half the speed for finer placement"
+        },
+        {
+          "type": "fix",
+          "text": "Decoration catalog cards no longer stretch on pages with only a few items"
+        },
+        {
+          "type": "fix",
+          "text": "The garage vehicle preview and retrieved vehicles now sit on the ground"
+        },
+        {
+          "type": "fix",
+          "text": "Editing a property's zone no longer shows its own saved zone as a nearby conflict"
+        },
+        {
+          "type": "fix",
+          "text": "Owner dashboard: recent activity now scrolls, key holders and the give key button are always reachable, and placed doors show their name instead of a model name"
+        },
+        {
+          "type": "fix",
+          "text": "Saved housing data is loaded only after the database tables are ready, and data that cannot be read is no longer treated as empty and deleted"
+        },
+        {
+          "type": "fix",
+          "text": "Players are returned to where they were when the resource restarts during property creation"
+        }
+      ]
+    },
+    {
       "version": "2.01",
       "date": "2026-10-13",
       "files": [
