@@ -2,6 +2,52 @@
   "package": "Cylex Apex Housing",
   "entries": [
     {
+      "version": "2.11",
+      "date": "2026-11-03",
+      "title": "Security camera fixes and ambience for IPL homes",
+      "files": [
+        "client/cameras.lua",
+        "client/placer.lua",
+        "client/decoration.lua",
+        "client/main.lua",
+        "server/interior_env.lua",
+        "locales/en.json",
+        "locales/tr.json",
+        "html (replace the old folder)",
+        "fxmanifest.lua"
+      ],
+      "changes": [
+        {
+          "type": "add",
+          "text": "IPL homes now have the Ambience tab in the M panel, so owners can set their own time and weather inside, like in shells"
+        },
+        {
+          "type": "fix",
+          "text": "Editing a placed security camera now moves that camera itself, like furniture, instead of spawning a second one. Cancelling puts it back where it was"
+        },
+        {
+          "type": "fix",
+          "text": "You now see your own character in camera views while you are inside the home"
+        },
+        {
+          "type": "change",
+          "text": "Security camera placement: the camera model is now changed with the left and right arrow keys or the previous and next buttons on the placement panel, instead of Tab"
+        },
+        {
+          "type": "change",
+          "text": "Manual camera placement: the mouse wheel turns the camera, the up and down arrows still tilt it"
+        },
+        {
+          "type": "fix",
+          "text": "After watching an inside camera from outside, you are returned to where you stood instead of the door"
+        },
+        {
+          "type": "fix",
+          "text": "Garden furniture and cameras no longer disappear while you watch the cameras"
+        }
+      ]
+    },
+    {
       "version": "2.1",
       "date": "2026-11-02",
       "title": "New building system for apartments and motels, plus decoration favorites",
