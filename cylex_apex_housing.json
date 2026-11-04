@@ -2,6 +2,62 @@
   "package": "Cylex Apex Housing",
   "entries": [
     {
+      "version": "2.12",
+      "date": "2026-11-04",
+      "title": "Instant power cuts, door locking and IPL style fixes",
+      "files": [
+        "client/decoration.lua",
+        "client/shells.lua",
+        "client/main.lua",
+        "client/home.lua",
+        "client/ipl.lua",
+        "server/bills.lua",
+        "server/properties.lua",
+        "server/decoration.lua",
+        "config/furniture/default_props.lua",
+        "config/furniture/missing_props_extra.lua",
+        "fxmanifest.lua"
+      ],
+      "changes": [
+        {
+          "type": "fix",
+          "text": "Power cuts from unpaid bills now happen instantly: when a new bill starts the cut, the lights go out for everyone already inside, and paying turns them back on at once, with no need to leave and re-enter"
+        },
+        {
+          "type": "fix",
+          "text": "Changing an IPL home's interior style no longer leaves the furniture invisible (you could still bump into it)"
+        },
+        {
+          "type": "fix",
+          "text": "Locking a placed door now swings it shut first and then locks it, instead of locking it half open or snapping it closed. A door someone holds open is forced shut after a moment"
+        },
+        {
+          "type": "fix",
+          "text": "Lights you added yourself now also go out during a power cut"
+        },
+        {
+          "type": "fix",
+          "text": "The power cut now works in IPL homes and in shells with their own time and weather set"
+        },
+        {
+          "type": "add",
+          "text": "MLO homes and gardens: during a power cut the lights you added go out, while the city's lights stay on"
+        },
+        {
+          "type": "fix",
+          "text": "Placed doors can no longer be tipped over by pushing them or swung far past their normal opening angle"
+        },
+        {
+          "type": "fix",
+          "text": "29 more doors in the Doors category can now be opened and locked; before they acted like plain furniture"
+        },
+        {
+          "type": "change",
+          "text": "The decoration category list now keeps the same order every time: the base categories first, then the prop packs from A to Z"
+        }
+      ]
+    },
+    {
       "version": "2.11",
       "date": "2026-11-03",
       "title": "Security camera fixes and ambience for IPL homes",
