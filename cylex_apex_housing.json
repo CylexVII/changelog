@@ -2,6 +2,39 @@
   "package": "Cylex Apex Housing",
   "entries": [
     {
+      "version": "2.13",
+      "date": "2026-11-05",
+      "title": "Bill notice and garage fixes",
+      "files": [
+        "client/decoration.lua",
+        "client/main.lua",
+        "server/bills.lua",
+        "server/properties.lua",
+        "server/garage.lua",
+        "locales",
+        "html (replace the old folder)",
+        "fxmanifest.lua"
+      ],
+      "changes": [
+        {
+          "type": "fix",
+          "text": "The unpaid bills notice is now shown only to the owner and key holders. Admins walking through a garden and visitors let in by the doorbell or a raid no longer get it"
+        },
+        {
+          "type": "fix",
+          "text": "Key holders without the pay bills permission now also get the unpaid bills notice when they enter an MLO home"
+        },
+        {
+          "type": "fix",
+          "text": "Parking a car that is not registered to you or anyone with garage access now says so, instead of showing \"You are not allowed to do that\""
+        },
+        {
+          "type": "fix",
+          "text": "Garage messages no longer push the button out of the slot card, and the selected card's bottom edge is no longer cut off"
+        }
+      ]
+    },
+    {
       "version": "2.12",
       "date": "2026-11-04",
       "title": "Instant power cuts, door locking and IPL style fixes",
