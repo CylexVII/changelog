@@ -2,6 +2,44 @@
   "package": "Cylex Apex Housing",
   "entries": [
     {
+      "version": "2.14",
+      "date": "2026-11-05",
+      "title": "Easier building creator: undo rooms, delete rooms and step guides",
+      "files": [
+        "client/building_template.lua",
+        "server/complexes.lua",
+        "locales",
+        "html (replace the old folder)",
+        "fxmanifest.lua"
+      ],
+      "changes": [
+        {
+          "type": "add",
+          "text": "MLO buildings: press Z while picking the next door to take back the last room you created, for example one placed on the wrong door. Its number is used again for the next room"
+        },
+        {
+          "type": "add",
+          "text": "Empty rooms can now be deleted from the building's room table"
+        },
+        {
+          "type": "add",
+          "text": "Every step of the property and building creator now has a short guide that says what to do there and shows which steps are done, needed or optional. It can be hidden"
+        },
+        {
+          "type": "change",
+          "text": "Every point in the creator, such as the entrance, zone, stash or wardrobe, now has a one-line explanation of what it is for"
+        },
+        {
+          "type": "change",
+          "text": "Once a building has rooms, the add rooms screen leads on to the room table with a clear Continue button"
+        },
+        {
+          "type": "change",
+          "text": "While setting up the first room of an MLO building, the stash and wardrobe points are labelled on screen"
+        }
+      ]
+    },
+    {
       "version": "2.13",
       "date": "2026-11-05",
       "title": "Bill notice and garage fixes",
