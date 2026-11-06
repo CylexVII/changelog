@@ -43,7 +43,7 @@
         },
         {
           "type": "add",
-          "text": "New optional clothing bag item: put the bag on the ground, open it like a store (target, text UI or 3D text) and switch between your saved outfits in seconds. Off by default (Config.ClothingBag in shared/config/bag.lua)"
+          "text": "New optional clothing bag item: put the bag on the ground, open it like a store (target, text UI or 3D text) and switch between your saved outfits in seconds. Settings are in shared/config/bag.lua"
         },
         {
           "type": "add",
