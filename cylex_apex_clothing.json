@@ -2,6 +2,96 @@
   "package": "Cylex Apex Clothing",
   "entries": [
     {
+      "version": "1.0.11",
+      "date": "2026-11-06",
+      "title": "Hair ties and a clothing bag",
+      "files": [
+        "fxmanifest.lua",
+        "client/bag.lua (new)",
+        "client/bag_hooks.lua (new)",
+        "server/bag.lua (new)",
+        "shared/bag.lua (new)",
+        "shared/config/bag.lua (new, Config.ClothingBag)",
+        "shared/functions.lua",
+        "client/interaction.lua",
+        "client/target/ox.lua",
+        "client/target/qb.lua",
+        "client/client.lua",
+        "client/creator.lua",
+        "game/customization.lua",
+        "game/nui.lua",
+        "server/checkout.lua",
+        "locales (all files)",
+        "html (replace the old folder)",
+        "client/toka.lua (new)",
+        "client/toka_hooks.lua (new, your own code on tie / untie)",
+        "client/radial/radial.lua",
+        "client/radial/ox.lua",
+        "client/radial/qb.lua",
+        "server/toka.lua (new)",
+        "server/database/toka.lua (new)",
+        "server/database/schema.lua",
+        "shared/toka.lua (new)",
+        "shared/config/hairtie.lua (new, hair tie settings)",
+        "shared/config/config.lua",
+        "shared/pricing.lua"
+      ],
+      "changes": [
+        {
+          "type": "add",
+          "text": "Hair ties: save up to 6 hairstyles and switch between them with /hairtie, /hairtie 2 or a key you bind, with a tie-up animation. The menu shows every saved hair with its photo and previews it on your character"
+        },
+        {
+          "type": "add",
+          "text": "New optional clothing bag item: put the bag on the ground, open it like a store (target, text UI or 3D text) and switch between your saved outfits in seconds. Off by default (Config.ClothingBag in shared/config/bag.lua)"
+        },
+        {
+          "type": "add",
+          "text": "Barbers have a Hair ties page and a Save to hair tie button on the hair page. A style saved without buying it is paid once, the first time it is put on"
+        },
+        {
+          "type": "add",
+          "text": "Add the clothing_bag item to your inventory (and hair_tie if you set Config.HairTie.RequireItem). Ready-made definitions for ox_inventory, qb-core / qbx and ESX are in the install guide under \"Items to add to your inventory\""
+        },
+        {
+          "type": "add",
+          "text": "Hair ties stay after relog and /reloadskin, and Back to my old hair puts the previous hair back. Each slot can keep your current hair colour and use a tie or untie animation"
+        },
+        {
+          "type": "add",
+          "text": "Pick an outfit and press Confirm: a change animation plays and the panel stays open, so you can go straight to the next one. Closing the panel keeps the last outfit"
+        },
+        {
+          "type": "add",
+          "text": "The bag has its own prices: per change, job outfit, saving, and a one-time price for an outfit you never bought (e.g. from a share code). A price of 0 is never shown"
+        },
+        {
+          "type": "add",
+          "text": "Job tab with your job and gang outfits, plus a Civilian clothes row to go back to your saved look"
+        },
+        {
+          "type": "add",
+          "text": "Outfits saved on another character model (male / female or a different ped) are shown locked as \"Other character\" and can't be worn"
+        },
+        {
+          "type": "add",
+          "text": "Save button in the bag: saves what you are wearing as a new outfit"
+        },
+        {
+          "type": "add",
+          "text": "Only the owner can open or pick up their bag. When the owner leaves or the server restarts, the bag is removed and the item is given back once"
+        },
+        {
+          "type": "add",
+          "text": "Admin command /clothingbag [id] opens the bag panel without a bag or item (AdminCommand in the bag config)"
+        },
+        {
+          "type": "add",
+          "text": "Hair ties have their own config file (shared/config/hairtie.lua) with optional prices and an optional hair tie item, and can be turned off completely. They can't be put on while dead, cuffed, swimming or holding a weapon"
+        }
+      ]
+    },
+    {
       "version": "1.0.10",
       "date": "2026-10-24",
       "title": "Take clothes off for a look, and pick up where you left off",
