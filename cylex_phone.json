@@ -2,6 +2,68 @@
   "package": "Cylex Phone",
   "entries": [
     {
+      "version": "1.38",
+      "date": "2026-11-14",
+      "files": [
+        "html (remove old html file and put new)",
+        "client",
+        "server",
+        "editable",
+        "locales",
+        "safeevents.txt"
+      ],
+      "changes": [
+        {
+          "type": "add",
+          "text": "Live: PK battles have been added; two streamers duel and the side that receives more gifts wins."
+        },
+        {
+          "type": "add",
+          "text": "Live: A ranking tab has been added (top streamers, PK wins and top supporters, weekly and all time)."
+        },
+        {
+          "type": "add",
+          "text": "Live: You can now follow streamers and get a notification when they go live."
+        },
+        {
+          "type": "add",
+          "text": "Live: You can now choose who you get live notifications from (everyone, only people you follow or nobody)."
+        },
+        {
+          "type": "add",
+          "text": "Live: Viewers can now join the stream as a guest; the screen splits in two."
+        },
+        {
+          "type": "add",
+          "text": "Live: Streamers can now pin, mute, kick or ban people from the chat."
+        },
+        {
+          "type": "add",
+          "text": "Live: Streams can now have a title."
+        },
+        {
+          "type": "add",
+          "text": "Live: PK records and win streaks are now saved."
+        },
+        {
+          "type": "add",
+          "text": "Live: In the last 30 seconds of a PK, gifts count double."
+        },
+        {
+          "type": "add",
+          "text": "Live: After a PK you can ask for a rematch."
+        },
+        {
+          "type": "add",
+          "text": "Live: The weekly top streamer gets a crown on their stream card."
+        },
+        {
+          "type": "perf",
+          "text": "Live: Gift money is now paid to the streamer in one go every 5 seconds instead of on every gift."
+        }
+      ]
+    },
+    {
       "version": "1.375",
       "date": "2026-09-04",
       "files": [
