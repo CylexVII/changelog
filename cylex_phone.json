@@ -8,8 +8,9 @@
         "html (remove old html file and put new)",
         "client",
         "server",
-        "editable",
+        "editable (new file: calendar_config.lua)",
         "locales",
+        "fxmanifest.lua",
         "safeevents.txt"
       ],
       "changes": [
@@ -20,6 +21,10 @@
         {
           "type": "add",
           "text": "Live: A ranking tab has been added (top streamers, PK wins and top supporters, weekly and all time)."
+        },
+        {
+          "type": "add",
+          "text": "Calendar: A new Calendar app has been added (month, year, day and list views)."
         },
         {
           "type": "add",
@@ -56,6 +61,74 @@
         {
           "type": "add",
           "text": "Live: The weekly top streamer gets a crown on their stream card."
+        },
+        {
+          "type": "add",
+          "text": "Calendar: A Calendar widget has been added for the home screen."
+        },
+        {
+          "type": "add",
+          "text": "Calendar: The Calendar app icon now shows today's date."
+        },
+        {
+          "type": "add",
+          "text": "Calendar: You can now create your own calendars and pick their colours."
+        },
+        {
+          "type": "add",
+          "text": "Calendar: Admins can now post server-wide events, and every player gets a notification."
+        },
+        {
+          "type": "add",
+          "text": "Calendar: Job bosses can now post events for their job."
+        },
+        {
+          "type": "add",
+          "text": "Calendar: You can now invite your contacts to events and they can reply (going, maybe, not going)."
+        },
+        {
+          "type": "add",
+          "text": "Calendar: You can now set repeating events and reminders."
+        },
+        {
+          "type": "add",
+          "text": "Calendar: Events can have a location; tapping it sets a waypoint."
+        },
+        {
+          "type": "add",
+          "text": "Calendar: Public holidays are shown in the calendar."
+        },
+        {
+          "type": "add",
+          "text": "Frogweb: A new web browser app has been added; you can open real websites on your phone."
+        },
+        {
+          "type": "add",
+          "text": "Frogweb: You can now use tabs, bookmarks and history (history can be cleared)."
+        },
+        {
+          "type": "add",
+          "text": "Frogweb: The start page shows your favourites and frequently visited sites."
+        },
+        {
+          "type": "add",
+          "text": "Home screen: You can now group apps into folders (in edit mode, drag an app onto another app)."
+        },
+        {
+          "type": "add",
+          "text": "Home screen: A search has been added; swipe down or tap \"Search\" to find apps and contacts."
+        },
+        {
+          "type": "add",
+          "text": "Home screen: Search shows your recently used apps."
+        },
+        {
+          "type": "add",
+          "text": "Home screen: Long-press an app or folder to open a quick menu (edit home screen, remove app, rename or remove folder)."
+        },
+        {
+          "type": "add",
+          "text": "Home screen: When you return to the home screen, the page dots show for a moment so you can see there are more pages."
         },
         {
           "type": "perf",
