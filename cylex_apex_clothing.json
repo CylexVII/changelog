@@ -34,7 +34,9 @@
         "shared/toka.lua (new)",
         "shared/config/hairtie.lua (new, hair tie settings)",
         "shared/config/config.lua",
-        "shared/pricing.lua"
+        "shared/pricing.lua",
+        "server/server.lua",
+        "server/database/playeroutfits.lua"
       ],
       "changes": [
         {
@@ -88,6 +90,14 @@
         {
           "type": "add",
           "text": "Hair ties have their own config file (shared/config/hairtie.lua) with optional prices and an optional hair tie item, and can be turned off completely. They can't be put on while dead, cuffed, swimming or holding a weapon"
+        },
+        {
+          "type": "add",
+          "text": "Saved outfits can be put in any order: hold the dots at the left of an outfit and drag it up or down. The order is kept for next time"
+        },
+        {
+          "type": "change",
+          "text": "The camera label under the pose bar is gone, and the Pose / Light / Expression / Clothes bar sits lower on the screen"
         }
       ]
     },
